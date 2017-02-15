@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7ADF7D81B84DED3094A86003 /* Pods_BeerBeaconUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA6622355DF144E2505186F /* Pods_BeerBeaconUITests.framework */; };
+		8227B852BFE644DF298A6A8E /* Pods_BeerBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0399521B5B9296EDDA04D9 /* Pods_BeerBeacon.framework */; };
+		DFBF3F5D33D035B064C4E907 /* Pods_BeerBeaconTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E1132BD54717D9304C1BD1 /* Pods_BeerBeaconTests.framework */; };
 		F4A8EB3C1E54990200580285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB3B1E54990200580285 /* AppDelegate.swift */; };
-		F4A8EB3E1E54990200580285 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB3D1E54990200580285 /* ViewController.swift */; };
 		F4A8EB411E54990200580285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A8EB3F1E54990200580285 /* Main.storyboard */; };
 		F4A8EB431E54990200580285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A8EB421E54990200580285 /* Assets.xcassets */; };
 		F4A8EB461E54990200580285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A8EB441E54990200580285 /* LaunchScreen.storyboard */; };
 		F4A8EB511E54990200580285 /* BeerBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB501E54990200580285 /* BeerBeaconTests.swift */; };
 		F4A8EB5C1E54990200580285 /* BeerBeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB5B1E54990200580285 /* BeerBeaconUITests.swift */; };
+		F4A8EB6A1E549C0F00580285 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB691E549C0F00580285 /* MainTableViewController.swift */; };
+		F4A8EB6D1E549C4E00580285 /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB6B1E549C4E00580285 /* DemoCell.swift */; };
+		F4A8EB901E54A02900580285 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB8F1E54A02900580285 /* FoldingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31D2B3D024AABD2A9CE1A020 /* Pods-BeerBeaconTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerBeaconTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerBeaconTests/Pods-BeerBeaconTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7918E0FE4F9FFBA112EABC38 /* Pods-BeerBeacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerBeacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeerBeacon/Pods-BeerBeacon.release.xcconfig"; sourceTree = "<group>"; };
+		7D1C9AD47A84F867C3137313 /* Pods-BeerBeaconTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerBeaconTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeerBeaconTests/Pods-BeerBeaconTests.release.xcconfig"; sourceTree = "<group>"; };
+		7FD23B836B95610E529B797E /* Pods-BeerBeaconUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerBeaconUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeerBeaconUITests/Pods-BeerBeaconUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8756D6F9B4E5C56B22E44F3B /* Pods-BeerBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerBeacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerBeacon/Pods-BeerBeacon.debug.xcconfig"; sourceTree = "<group>"; };
+		9BA6622355DF144E2505186F /* Pods_BeerBeaconUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerBeaconUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20EB93582D2F35D5607280E /* Pods-BeerBeaconUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerBeaconUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerBeaconUITests/Pods-BeerBeaconUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9E1132BD54717D9304C1BD1 /* Pods_BeerBeaconTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerBeaconTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0399521B5B9296EDDA04D9 /* Pods_BeerBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A8EB381E54990200580285 /* BeerBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A8EB3B1E54990200580285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4A8EB3D1E54990200580285 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4A8EB401E54990200580285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4A8EB421E54990200580285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4A8EB451E54990200580285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +60,19 @@
 		F4A8EB571E54990200580285 /* BeerBeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerBeaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A8EB5B1E54990200580285 /* BeerBeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerBeaconUITests.swift; sourceTree = "<group>"; };
 		F4A8EB5D1E54990200580285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4A8EB691E549C0F00580285 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		F4A8EB6B1E549C4E00580285 /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
+		F4A8EB851E549D9F00580285 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		F4A8EB861E549D9F00580285 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F4A8EB871E549D9F00580285 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F4A8EB881E549D9F00580285 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F4A8EB891E549D9F00580285 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		F4A8EB8A1E549D9F00580285 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		F4A8EB8B1E549D9F00580285 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		F4A8EB8C1E549D9F00580285 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		F4A8EB8D1E549D9F00580285 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		F4A8EB8E1E549D9F00580285 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		F4A8EB8F1E54A02900580285 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8227B852BFE644DF298A6A8E /* Pods_BeerBeacon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFBF3F5D33D035B064C4E907 /* Pods_BeerBeaconTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +96,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADF7D81B84DED3094A86003 /* Pods_BeerBeaconUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E32AB52D4951669E14CB7911 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8756D6F9B4E5C56B22E44F3B /* Pods-BeerBeacon.debug.xcconfig */,
+				7918E0FE4F9FFBA112EABC38 /* Pods-BeerBeacon.release.xcconfig */,
+				31D2B3D024AABD2A9CE1A020 /* Pods-BeerBeaconTests.debug.xcconfig */,
+				7D1C9AD47A84F867C3137313 /* Pods-BeerBeaconTests.release.xcconfig */,
+				A20EB93582D2F35D5607280E /* Pods-BeerBeaconUITests.debug.xcconfig */,
+				7FD23B836B95610E529B797E /* Pods-BeerBeaconUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F4A8EB2F1E54990200580285 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +123,8 @@
 				F4A8EB4F1E54990200580285 /* BeerBeaconTests */,
 				F4A8EB5A1E54990200580285 /* BeerBeaconUITests */,
 				F4A8EB391E54990200580285 /* Products */,
+				E32AB52D4951669E14CB7911 /* Pods */,
+				FEB30DAFA4734565A2BD85BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +141,12 @@
 		F4A8EB3A1E54990200580285 /* BeerBeacon */ = {
 			isa = PBXGroup;
 			children = (
+				F4A8EB701E549D6100580285 /* Fonts */,
 				F4A8EB3B1E54990200580285 /* AppDelegate.swift */,
-				F4A8EB3D1E54990200580285 /* ViewController.swift */,
+				F4A8EB8F1E54A02900580285 /* FoldingCell.swift */,
+				F4A8EB691E549C0F00580285 /* MainTableViewController.swift */,
 				F4A8EB3F1E54990200580285 /* Main.storyboard */,
+				F4A8EB6B1E549C4E00580285 /* DemoCell.swift */,
 				F4A8EB421E54990200580285 /* Assets.xcassets */,
 				F4A8EB441E54990200580285 /* LaunchScreen.storyboard */,
 				F4A8EB471E54990200580285 /* Info.plist */,
@@ -125,6 +172,33 @@
 			path = BeerBeaconUITests;
 			sourceTree = "<group>";
 		};
+		F4A8EB701E549D6100580285 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F4A8EB851E549D9F00580285 /* OpenSans-Bold.ttf */,
+				F4A8EB861E549D9F00580285 /* OpenSans-BoldItalic.ttf */,
+				F4A8EB871E549D9F00580285 /* OpenSans-ExtraBold.ttf */,
+				F4A8EB881E549D9F00580285 /* OpenSans-ExtraBoldItalic.ttf */,
+				F4A8EB891E549D9F00580285 /* OpenSans-Italic.ttf */,
+				F4A8EB8A1E549D9F00580285 /* OpenSans-Light.ttf */,
+				F4A8EB8B1E549D9F00580285 /* OpenSans-LightItalic.ttf */,
+				F4A8EB8C1E549D9F00580285 /* OpenSans-Regular.ttf */,
+				F4A8EB8D1E549D9F00580285 /* OpenSans-Semibold.ttf */,
+				F4A8EB8E1E549D9F00580285 /* OpenSans-SemiboldItalic.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		FEB30DAFA4734565A2BD85BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC0399521B5B9296EDDA04D9 /* Pods_BeerBeacon.framework */,
+				B9E1132BD54717D9304C1BD1 /* Pods_BeerBeaconTests.framework */,
+				9BA6622355DF144E2505186F /* Pods_BeerBeaconUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4A8EB601E54990200580285 /* Build configuration list for PBXNativeTarget "BeerBeacon" */;
 			buildPhases = (
+				314FF38A376A3094887A4E15 /* [CP] Check Pods Manifest.lock */,
 				F4A8EB341E54990200580285 /* Sources */,
 				F4A8EB351E54990200580285 /* Frameworks */,
 				F4A8EB361E54990200580285 /* Resources */,
+				6DFC565EDBF3F8D2BD64A565 /* [CP] Embed Pods Frameworks */,
+				2BD2BE6AD33FA6A6C5408FF9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4A8EB631E54990200580285 /* Build configuration list for PBXNativeTarget "BeerBeaconTests" */;
 			buildPhases = (
+				3D29A922119E1490CB114F88 /* [CP] Check Pods Manifest.lock */,
 				F4A8EB481E54990200580285 /* Sources */,
 				F4A8EB491E54990200580285 /* Frameworks */,
 				F4A8EB4A1E54990200580285 /* Resources */,
+				570EC3462A24C1EE00DE35ED /* [CP] Embed Pods Frameworks */,
+				2DE566BE3E9A99EA73A4928F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4A8EB661E54990200580285 /* Build configuration list for PBXNativeTarget "BeerBeaconUITests" */;
 			buildPhases = (
+				1EDD1B10A048126058ACC25E /* [CP] Check Pods Manifest.lock */,
 				F4A8EB531E54990200580285 /* Sources */,
 				F4A8EB541E54990200580285 /* Frameworks */,
 				F4A8EB551E54990200580285 /* Resources */,
+				53144480F9F2150ECF370A7F /* [CP] Embed Pods Frameworks */,
+				B8FD54136DFAE414D2D242C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +340,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EDD1B10A048126058ACC25E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2BD2BE6AD33FA6A6C5408FF9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerBeacon/Pods-BeerBeacon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DE566BE3E9A99EA73A4928F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerBeaconTests/Pods-BeerBeaconTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		314FF38A376A3094887A4E15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D29A922119E1490CB114F88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		53144480F9F2150ECF370A7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerBeaconUITests/Pods-BeerBeaconUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		570EC3462A24C1EE00DE35ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerBeaconTests/Pods-BeerBeaconTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DFC565EDBF3F8D2BD64A565 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerBeacon/Pods-BeerBeacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8FD54136DFAE414D2D242C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerBeaconUITests/Pods-BeerBeaconUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4A8EB341E54990200580285 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A8EB3E1E54990200580285 /* ViewController.swift in Sources */,
+				F4A8EB6A1E549C0F00580285 /* MainTableViewController.swift in Sources */,
 				F4A8EB3C1E54990200580285 /* AppDelegate.swift in Sources */,
+				F4A8EB6D1E549C4E00580285 /* DemoCell.swift in Sources */,
+				F4A8EB901E54A02900580285 /* FoldingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +636,7 @@
 		};
 		F4A8EB611E54990200580285 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8756D6F9B4E5C56B22E44F3B /* Pods-BeerBeacon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RREN52MQC8;
@@ -426,6 +650,7 @@
 		};
 		F4A8EB621E54990200580285 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7918E0FE4F9FFBA112EABC38 /* Pods-BeerBeacon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RREN52MQC8;
@@ -439,6 +664,7 @@
 		};
 		F4A8EB641E54990200580285 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D2B3D024AABD2A9CE1A020 /* Pods-BeerBeaconTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +680,7 @@
 		};
 		F4A8EB651E54990200580285 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D1C9AD47A84F867C3137313 /* Pods-BeerBeaconTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +696,7 @@
 		};
 		F4A8EB671E54990200580285 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20EB93582D2F35D5607280E /* Pods-BeerBeaconUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = RREN52MQC8;
@@ -483,6 +711,7 @@
 		};
 		F4A8EB681E54990200580285 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD23B836B95610E529B797E /* Pods-BeerBeaconUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = RREN52MQC8;
@@ -514,6 +743,7 @@
 				F4A8EB621E54990200580285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4A8EB631E54990200580285 /* Build configuration list for PBXNativeTarget "BeerBeaconTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +752,7 @@
 				F4A8EB651E54990200580285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4A8EB661E54990200580285 /* Build configuration list for PBXNativeTarget "BeerBeaconUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +761,7 @@
 				F4A8EB681E54990200580285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
