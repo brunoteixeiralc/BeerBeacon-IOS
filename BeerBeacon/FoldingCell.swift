@@ -149,7 +149,7 @@ open class FoldingCell: UITableViewCell {
     
     animationView = UIView(frame: containerView.frame)
     animationView?.layer.cornerRadius = foregroundView.layer.cornerRadius
-    animationView?.backgroundColor = .clear
+    animationView?.backgroundColor = UIColor.clear
     animationView?.translatesAutoresizingMaskIntoConstraints = false
     animationView?.alpha = 0
     
