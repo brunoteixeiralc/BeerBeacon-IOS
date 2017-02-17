@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,ESTSecureBeaconManagerDele
         
         let content = UNMutableNotificationContent()
         content.title = "BeerBeacon"
-        content.body = "Taps te esperando! Cheers!"
+        content.body = "Taps te esperando.Cheers!"
         content.sound = UNNotificationSound.default()
         
         _ = UNLocationNotificationTrigger(region:region, repeats:false)
