@@ -4,6 +4,7 @@ platform :ios, '9.0'
 target 'BeerBeacon' do
   use_frameworks!
   pod 'FoldingCell'
+  pod 'EstimoteSDK'
   
   target 'BeerBeaconTests' do
     inherit! :search_paths

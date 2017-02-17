@@ -7,16 +7,52 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,ESTBeaconManagerDelegate {
 
     var window: UIWindow?
 
-
+    let center = UNUserNotificationCenter.current()
+    let options: UNAuthorizationOptions = [.alert, .sound];
+    
+    let beaconManager = ESTBeaconManager()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
+        self.beaconManager.delegate = self
+        self.beaconManager.requestAlwaysAuthorization()
+        
+        self.beaconManager.startMonitoring(for: CLBeaconRegion(
+            proximityUUID: NSUUID(uuidString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")! as UUID,
+            major: 123, minor: 123, identifier: "monitored region"))
+        
+        center.requestAuthorization(options: options) {
+            (granted, error) in
+            if !granted {
+                print("Something went wrong")
+            }
+        }
+        
+        center.getNotificationSettings { (settings) in
+            if settings.authorizationStatus != .authorized {
+                 print("Notification not allowed")
+            }
+        }
+        
         return true
+    }
+    
+    func beaconManager(_ manager: Any, didEnter region: CLBeaconRegion) {
+        
+        let content = UNMutableNotificationContent()
+        content.title = "BeerBeacon"
+        content.body = "Taps te esperando! Cheers!"
+        content.sound = UNNotificationSound.default()
+        
+        _ = UNLocationNotificationTrigger(region:region, repeats:false)
+
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

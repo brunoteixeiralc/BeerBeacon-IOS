@@ -48,6 +48,7 @@
 		A20EB93582D2F35D5607280E /* Pods-BeerBeaconUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerBeaconUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerBeaconUITests/Pods-BeerBeaconUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9E1132BD54717D9304C1BD1 /* Pods_BeerBeaconTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerBeaconTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0399521B5B9296EDDA04D9 /* Pods_BeerBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45677721E573D15002709EF /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		F4A8EB381E54990200580285 /* BeerBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A8EB3B1E54990200580285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4A8EB401E54990200580285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -150,6 +151,7 @@
 				F4A8EB421E54990200580285 /* Assets.xcassets */,
 				F4A8EB441E54990200580285 /* LaunchScreen.storyboard */,
 				F4A8EB471E54990200580285 /* Info.plist */,
+				F45677721E573D15002709EF /* ObjCBridge.h */,
 			);
 			path = BeerBeacon;
 			sourceTree = "<group>";
@@ -586,6 +588,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -628,6 +631,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
