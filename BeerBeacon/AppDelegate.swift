@@ -10,17 +10,19 @@ import UIKit
 import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate,ESTBeaconManagerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,ESTSecureBeaconManagerDelegate {
 
     var window: UIWindow?
 
     let center = UNUserNotificationCenter.current()
     let options: UNAuthorizationOptions = [.alert, .sound];
     
-    let beaconManager = ESTBeaconManager()
+    let beaconManager = ESTSecureBeaconManager()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
        
+        ESTConfig.setupAppID("beerbeacon-lju", andAppToken: "a97dcc9e7ad472e291b61cc8680297dc")
+        
         self.beaconManager.delegate = self
         self.beaconManager.requestAlwaysAuthorization()
         
