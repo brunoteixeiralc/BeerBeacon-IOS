@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,ESTSecureBeaconManagerDele
 
     let center = UNUserNotificationCenter.current()
     let options: UNAuthorizationOptions = [.alert, .sound];
-    
+    let region = CLBeaconRegion(proximityUUID: NSUUID(uuidString:"0C0C7716-EE41-2AAA-A113-63E683E83A4F")! as UUID, major: 2138, minor: 26902, identifier: "monitored region")
     let beaconManager = ESTSecureBeaconManager()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -26,9 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate,ESTSecureBeaconManagerDele
         self.beaconManager.delegate = self
         self.beaconManager.requestAlwaysAuthorization()
         
-        self.beaconManager.startMonitoring(for: CLBeaconRegion(
-            proximityUUID: NSUUID(uuidString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")! as UUID,
-            major: 123, minor: 123, identifier: "monitored region"))
+        self.region.notifyOnEntry = true
+        self.region.notifyOnExit = true
+        self.beaconManager.startMonitoring(for: region)
+        
+        //self.beaconManager.startRangingBeacons(in: region)
         
         center.requestAuthorization(options: options) {
             (granted, error) in
@@ -46,37 +48,77 @@ class AppDelegate: UIResponder, UIApplicationDelegate,ESTSecureBeaconManagerDele
         return true
     }
     
+    
     func beaconManager(_ manager: Any, didEnter region: CLBeaconRegion) {
+        print("didEnter")
+        self.beaconManager.startRangingBeacons(in: region)
         
         let content = UNMutableNotificationContent()
         content.title = "BeerBeacon"
         content.body = "Taps te esperando.Cheers!"
         content.sound = UNNotificationSound.default()
         
-        _ = UNLocationNotificationTrigger(region:region, repeats:false)
+        let trigger = UNTimeIntervalNotificationTrigger(
+            timeInterval: 1.0,
+            repeats: false)
+        
+        let request = UNNotificationRequest(
+            identifier: "BeerBeacon",
+            content: content,
+            trigger: trigger
+        )
+        
+        UNUserNotificationCenter.current().add(
+            request, withCompletionHandler: nil)
 
+    }
+    
+    func beaconManager(_ manager: Any, monitoringDidFailFor region: CLBeaconRegion?, withError error: Error) {
+        print(error)
+    }
+    
+    func beaconManager(_ manager: Any, didFailWithError error: Error) {
+        print(error)
+    }
+    
+    func beaconManager(_ manager: Any, didExitRegion region: CLBeaconRegion) {
+        print("didExit")
+        self.beaconManager.stopRangingBeacons(in: region)
+    }
+    
+    func beaconManager(_ manager: Any, didDetermineState state: CLRegionState, for region: CLBeaconRegion) {
+         //0 = unknown, 1 = inside, 2 = outside.
+        print(state.rawValue)
+    }
+    
+    func beaconManager(_ manager: Any, didRangeBeacons beacons: [ESTBeacon], in region: CLBeaconRegion) {
+//        rssi - quanto mais proximo de 0 mais proximo está do beacon
+//        if(beacons.count > 0){
+//            print(beacons[0].proximity)
+//            print(beacons[0].rssi)
+//        }
+        
+        let knownBeacons = beacons.filter{$0.proximity != CLProximity.unknown}
+        if(knownBeacons.count > 0){
+            let closestBeancon = knownBeacons[0] as ESTBeacon
+            print(closestBeancon.proximity)
+            print(closestBeancon.rssi)
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
 
