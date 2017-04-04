@@ -279,17 +279,20 @@
 					F4A8EB371E54990200580285 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RREN52MQC8;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					F4A8EB4B1E54990200580285 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RREN52MQC8;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F4A8EB371E54990200580285;
 					};
 					F4A8EB561E54990200580285 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RREN52MQC8;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F4A8EB371E54990200580285;
 					};

@@ -5,6 +5,8 @@ target 'BeerBeacon' do
   use_frameworks!
   pod 'FoldingCell'
   pod 'EstimoteSDK'
+  pod 'YBAlertController'
+  pod 'SCLAlertView'
   
   target 'BeerBeaconTests' do
     inherit! :search_paths

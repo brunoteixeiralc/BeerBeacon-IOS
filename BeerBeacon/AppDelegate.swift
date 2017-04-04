@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,ESTSecureBeaconManagerDele
 
     let center = UNUserNotificationCenter.current()
     let options: UNAuthorizationOptions = [.alert, .sound];
-    let region = CLBeaconRegion(proximityUUID: NSUUID(uuidString:"0C0C7716-EE41-2AAA-A113-63E683E83A4F")! as UUID, major: 2138, minor: 26902, identifier: "monitored region")
+    let region = CLBeaconRegion(proximityUUID: UUID(uuidString:"0C0C7716-EE41-2AAA-A113-63E683E83A4F")! as UUID, major: 2138, minor: 26902, identifier: "monitored region")
     let beaconManager = ESTSecureBeaconManager()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
