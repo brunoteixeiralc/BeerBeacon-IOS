@@ -15,7 +15,9 @@ class DemoCell: FoldingCell {
   
   @IBOutlet weak var closeNumberLabel: UILabel!
   @IBOutlet weak var openNumberLabel: UILabel!
-  
+  @IBOutlet weak var option1: UISwitch!
+  @IBOutlet weak var option2: UISwitch!
+    
   var number: Int = 0 {
     didSet {
       closeNumberLabel.text = String(number)
@@ -27,6 +29,9 @@ class DemoCell: FoldingCell {
     foregroundView.layer.cornerRadius = 10
     foregroundView.layer.masksToBounds = true
     
+    option1.addTarget(self, action: #selector(DemoCell.stateChangedOption1), for: UIControlEvents.valueChanged)
+    option2.addTarget(self, action: #selector(DemoCell.stateChangedOption2), for: UIControlEvents.valueChanged)
+    
     super.awakeFromNib()
   }
   
@@ -35,9 +40,21 @@ class DemoCell: FoldingCell {
     let durations = [0.26, 0.2, 0.2]
     return durations[itemIndex]
   }
+    
+  func stateChangedOption1(){
+    if(option2.isOn){
+        option2.setOn(false, animated: true)
+    }
+  }
+    
+  func stateChangedOption2(){
+    if(option1.isOn){
+        option1.setOn(false, animated: true)
+    }
+  }
+    
 }
 
-// MARK: Actions
 extension DemoCell {
   
   @IBAction func buttonHandler(_ sender: AnyObject) {
