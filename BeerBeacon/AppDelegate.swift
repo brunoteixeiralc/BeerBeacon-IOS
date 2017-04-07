@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,ESTSecureBeaconManagerDelegate {
@@ -21,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,ESTSecureBeaconManagerDele
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
        
+        FIRApp.configure()
+        
         ESTConfig.setupAppID("beerbeacon-lju", andAppToken: "a97dcc9e7ad472e291b61cc8680297dc")
         
         self.beaconManager.delegate = self

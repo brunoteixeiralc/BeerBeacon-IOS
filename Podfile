@@ -7,6 +7,7 @@ target 'BeerBeacon' do
   pod 'EstimoteSDK'
   pod 'YBAlertController'
   pod 'SCLAlertView'
+  pod 'Firebase/Database'
   
   target 'BeerBeaconTests' do
     inherit! :search_paths

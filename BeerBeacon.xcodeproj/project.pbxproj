@@ -19,6 +19,8 @@
 		F4A8EB6A1E549C0F00580285 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB691E549C0F00580285 /* MainTableViewController.swift */; };
 		F4A8EB6D1E549C4E00580285 /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB6B1E549C4E00580285 /* DemoCell.swift */; };
 		F4A8EB901E54A02900580285 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB8F1E54A02900580285 /* FoldingCell.swift */; };
+		F4BA7BB31E97526200CA1C50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4BA7BB21E97526200CA1C50 /* GoogleService-Info.plist */; };
+		F4BA7BB61E97531000CA1C50 /* Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA7BB51E97531000CA1C50 /* Tap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,9 @@
 		F4A8EB8D1E549D9F00580285 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		F4A8EB8E1E549D9F00580285 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		F4A8EB8F1E54A02900580285 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
+		F4BA7BB21E97526200CA1C50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4BA7BB51E97531000CA1C50 /* Tap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tap.swift; sourceTree = "<group>"; };
+		F4BA7BB71E9758E700CA1C50 /* BeerBeacon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeerBeacon.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +147,8 @@
 		F4A8EB3A1E54990200580285 /* BeerBeacon */ = {
 			isa = PBXGroup;
 			children = (
+				F4BA7BB71E9758E700CA1C50 /* BeerBeacon.entitlements */,
+				F4BA7BB41E97530000CA1C50 /* Model */,
 				F4A8EB701E549D6100580285 /* Fonts */,
 				F4A8EB3B1E54990200580285 /* AppDelegate.swift */,
 				F4A8EB8F1E54A02900580285 /* FoldingCell.swift */,
@@ -151,6 +158,7 @@
 				F4A8EB421E54990200580285 /* Assets.xcassets */,
 				F4A8EB441E54990200580285 /* LaunchScreen.storyboard */,
 				F4A8EB471E54990200580285 /* Info.plist */,
+				F4BA7BB21E97526200CA1C50 /* GoogleService-Info.plist */,
 				F45677721E573D15002709EF /* ObjCBridge.h */,
 			);
 			path = BeerBeacon;
@@ -189,6 +197,14 @@
 				F4A8EB8E1E549D9F00580285 /* OpenSans-SemiboldItalic.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		F4BA7BB41E97530000CA1C50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4BA7BB51E97531000CA1C50 /* Tap.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		FEB30DAFA4734565A2BD85BA /* Frameworks */ = {
@@ -273,7 +289,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Bruno Lemgruber";
 				TargetAttributes = {
 					F4A8EB371E54990200580285 = {
@@ -281,6 +297,11 @@
 						DevelopmentTeam = RREN52MQC8;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					F4A8EB4B1E54990200580285 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -324,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4A8EB461E54990200580285 /* LaunchScreen.storyboard in Resources */,
+				F4BA7BB31E97526200CA1C50 /* GoogleService-Info.plist in Resources */,
 				F4A8EB431E54990200580285 /* Assets.xcassets in Resources */,
 				F4A8EB411E54990200580285 /* Main.storyboard in Resources */,
 			);
@@ -490,6 +512,7 @@
 			files = (
 				F4A8EB6A1E549C0F00580285 /* MainTableViewController.swift in Sources */,
 				F4A8EB3C1E54990200580285 /* AppDelegate.swift in Sources */,
+				F4BA7BB61E97531000CA1C50 /* Tap.swift in Sources */,
 				F4A8EB6D1E549C4E00580285 /* DemoCell.swift in Sources */,
 				F4A8EB901E54A02900580285 /* FoldingCell.swift in Sources */,
 			);
@@ -647,7 +670,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8756D6F9B4E5C56B22E44F3B /* Pods-BeerBeacon.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BeerBeacon/BeerBeacon.entitlements;
 				DEVELOPMENT_TEAM = RREN52MQC8;
 				INFOPLIST_FILE = BeerBeacon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -661,7 +686,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7918E0FE4F9FFBA112EABC38 /* Pods-BeerBeacon.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BeerBeacon/BeerBeacon.entitlements;
 				DEVELOPMENT_TEAM = RREN52MQC8;
 				INFOPLIST_FILE = BeerBeacon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

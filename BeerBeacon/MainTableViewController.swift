@@ -23,6 +23,7 @@
 
 import UIKit
 import FoldingCell
+import Firebase
 
 class MainTableViewController: UITableViewController {
     
@@ -32,12 +33,32 @@ class MainTableViewController: UITableViewController {
     let kRowsCount = 10
     
     var cellHeights = [CGFloat]()
+    
+    var taps = [Tap]()
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        FIRDatabase.database().reference().child("taps").observe(.value, with: { (snapshot) in
+            
+            self.taps.removeAll()
+            
+            for child in snapshot.children{
+                let tap = Tap(snapshot: child as! FIRDataSnapshot)
+                self.taps.insert(tap, at: 0)
+            }
+            
+            self.tableView.reloadData()
+        })
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         createCellHeightsArray()
         self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "back")!)
+        
     }
     
     // MARK: configure
@@ -50,7 +71,7 @@ class MainTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return taps.count
     }
 
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

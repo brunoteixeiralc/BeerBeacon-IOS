@@ -69,6 +69,12 @@ open class FoldingCell: UITableViewCell {
     
     commonInit()
   }
+    
+    var tap:Tap!{
+        didSet{
+            
+        }
+    }
   
   /**
    Call this method in methods init(style: UITableViewCellStyle, reuseIdentifier: String?) after creating Views
