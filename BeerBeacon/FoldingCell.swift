@@ -26,6 +26,11 @@ import UIKit
 /// UITableViewCell with folding animation
 open class FoldingCell: UITableViewCell {
   
+  @IBOutlet weak var cervejaria: UILabel!
+  @IBOutlet weak var cerveja: UILabel!
+  @IBOutlet weak var estilo: UILabel!
+  @IBOutlet weak var abv: UILabel!
+  @IBOutlet weak var ibu: UILabel!
   /// UIView whitch display when cell open
   @IBOutlet weak open var containerView: UIView!
   @IBOutlet weak open var containerViewTop: NSLayoutConstraint!
@@ -72,7 +77,11 @@ open class FoldingCell: UITableViewCell {
     
     var tap:Tap!{
         didSet{
-            
+          cerveja.text = tap.cerveja
+          cervejaria.text = tap.cervejaria
+          abv.text = tap.abv
+          ibu.text = String(tap.ibu)
+          estilo.text = tap.estilo
         }
     }
   

@@ -17,9 +17,9 @@ class Tap {
     var cervejaria = ""
     var estilo = ""
     var nota = ""
+   
     
     private let tapRef = FIRDatabase.database().reference().child("taps")
-
     
     init(abv:String,ibu:Int,cerveja:String,cervejaria:String,estilo:String,nota:String) {
         self.abv = abv
@@ -32,8 +32,6 @@ class Tap {
     
     init(snapshot: FIRDataSnapshot)
     {
-
-        //let ref: FIRDatabaseReference! = snapshot.ref
         
         if let value = snapshot.value as? [String : Any] {
             abv = value["ABV"] as! String

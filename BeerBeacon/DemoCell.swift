@@ -20,8 +20,8 @@ class DemoCell: FoldingCell {
     
   var number: Int = 0 {
     didSet {
-      closeNumberLabel.text = String(number)
-      openNumberLabel.text = "Tap \(String(number))"
+      closeNumberLabel.text = String(number + 1)
+      openNumberLabel.text = "Tap \(String(number + 1))"
     }
   }
   override func awakeFromNib() {

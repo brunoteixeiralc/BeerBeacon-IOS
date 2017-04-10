@@ -27,6 +27,8 @@ import Firebase
 
 class MainTableViewController: UITableViewController {
     
+    @IBOutlet weak var cartao_virtual: UILabel!
+    
     let kCloseCellHeight: CGFloat = 179
     let kOpenCellHeight: CGFloat = 488
 
@@ -92,8 +94,10 @@ class MainTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FoldingCell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FoldingCell", for: indexPath) as! FoldingCell
+        
+        cell.tap = taps[(indexPath as NSIndexPath).row]
+        
         return cell
     }
     
