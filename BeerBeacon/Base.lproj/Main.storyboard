@@ -52,7 +52,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="88" height="165"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWG-zH-Vjo">
-                                                            <rect key="frame" x="18.5" y="31" width="43" height="33"/>
+                                                            <rect key="frame" x="19" y="31" width="43" height="33"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="24"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -267,7 +267,7 @@
                                                             <rect key="frame" x="190.5" y="62" width="179" height="40"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DJ-Tz-dlt">
-                                                                    <rect key="frame" x="74.5" y="0.0" width="30" height="22"/>
+                                                                    <rect key="frame" x="75" y="0.0" width="30" height="22"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -302,7 +302,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,5%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwZ-qm-hHf">
-                                                            <rect key="frame" x="257.5" y="97.5" width="45.5" height="27.5"/>
+                                                            <rect key="frame" x="258" y="97.5" width="45.5" height="27.5"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="20"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -629,15 +629,22 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="abv" destination="a0P-Eh-vI9" id="S14-Fv-v46"/>
+                                    <outlet property="abv_interno" destination="DwZ-qm-hHf" id="KpH-Z9-AQB"/>
                                     <outlet property="cerveja" destination="mNy-cH-kEi" id="7lW-Sy-6px"/>
                                     <outlet property="cervejaria" destination="BUL-Of-nxF" id="fZk-oh-2Dt"/>
                                     <outlet property="closeNumberLabel" destination="uWG-zH-Vjo" id="4Fq-wZ-nFd"/>
                                     <outlet property="containerView" destination="CGm-93-iX0" id="gSm-z4-RdG"/>
                                     <outlet property="containerViewTop" destination="wys-AY-Zdw" id="Exs-1v-4Jn"/>
                                     <outlet property="estilo" destination="fZc-Gv-4xg" id="fqa-ri-Py3"/>
+                                    <outlet property="estilo_interno" destination="R9w-bP-fWa" id="6ZZ-mf-IYe"/>
                                     <outlet property="foregroundView" destination="CQr-i9-7br" id="88q-9Z-PtA"/>
                                     <outlet property="foregroundViewTop" destination="9tL-QY-I0e" id="lRz-za-vwR"/>
                                     <outlet property="ibu" destination="sA6-bX-nDC" id="onv-qW-oLW"/>
+                                    <outlet property="ibu_interno" destination="S4b-sI-0J6" id="dTQ-Kg-SqI"/>
+                                    <outlet property="op1_copo" destination="I2n-ts-cGO" id="JBR-Ha-H28"/>
+                                    <outlet property="op1_preco" destination="VHi-qF-ipj" id="kmT-cC-lLZ"/>
+                                    <outlet property="op2_copo" destination="3Nd-1K-xsW" id="imC-nF-Edt"/>
+                                    <outlet property="op2_preco" destination="CVH-a0-dOK" id="vBL-Ri-Bnl"/>
                                     <outlet property="openNumberLabel" destination="7eb-NE-XLS" id="mrT-hs-afw"/>
                                     <outlet property="option1" destination="aSG-4B-ImW" id="dJc-nO-nz3"/>
                                     <outlet property="option2" destination="La9-i3-xhY" id="UFy-qe-CEm"/>

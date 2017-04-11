@@ -31,7 +31,15 @@ open class FoldingCell: UITableViewCell {
   @IBOutlet weak var estilo: UILabel!
   @IBOutlet weak var abv: UILabel!
   @IBOutlet weak var ibu: UILabel!
-  /// UIView whitch display when cell open
+  @IBOutlet weak var ibu_interno: UILabel!
+  @IBOutlet weak var abv_interno: UILabel!
+  @IBOutlet weak var estilo_interno: UILabel!
+  
+  @IBOutlet weak var op1_copo: UILabel!
+  @IBOutlet weak var op1_preco: UILabel!
+  @IBOutlet weak var op2_copo: UILabel!
+  @IBOutlet weak var op2_preco: UILabel!
+  
   @IBOutlet weak open var containerView: UIView!
   @IBOutlet weak open var containerViewTop: NSLayoutConstraint!
   
@@ -80,8 +88,16 @@ open class FoldingCell: UITableViewCell {
           cerveja.text = tap.cerveja
           cervejaria.text = tap.cervejaria
           abv.text = tap.abv
+          abv_interno.text = tap.abv
           ibu.text = String(tap.ibu)
+          ibu_interno.text = String(tap.ibu)
+          estilo_interno.text = tap.estilo
           estilo.text = tap.estilo
+          
+          op1_copo.text = tap.medidas[0].quantidade
+          op1_preco.text = "R$ \(tap.medidas[0].preco)"
+          op2_copo.text = tap.medidas[1].quantidade
+          op2_preco.text = "R$ \(tap.medidas[1].preco)"
         }
     }
   

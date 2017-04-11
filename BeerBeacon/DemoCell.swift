@@ -63,7 +63,7 @@ extension DemoCell {
     alertController.touchingOutsideDismiss = true
     alertController.buttonIconColor = UIColor(red: 255/255, green: 212/255, blue: 0/255, alpha: 1.0)
     alertController.cancelButtonTitle = "Cancelar"
-    for i in 1 ..< 11 {
+    for i in 1 ..< 6 {
         if(i == 1){
             alertController.addButton(UIImage(named: "hop"), title: "\(i) cerveja", action: {
                 
