@@ -24,6 +24,8 @@
 import UIKit
 import FoldingCell
 import Firebase
+import KVNProgress
+
 
 class MainTableViewController: UITableViewController {
     
@@ -37,6 +39,13 @@ class MainTableViewController: UITableViewController {
     var cellHeights = [CGFloat]()
     
     var taps = [Tap]()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        setupConfig()
+        KVNProgress.show(withStatus: "Carregando os taps", on: view)
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
@@ -51,9 +60,25 @@ class MainTableViewController: UITableViewController {
             }
             
             self.tableView.reloadData()
+            
+            KVNProgress.dismiss()
         })
 
     }
+    
+    func setupConfig() {
+        let Basic = KVNProgressConfiguration()
+        Basic.statusColor = UIColor.white
+        Basic.circleStrokeForegroundColor = UIColor.white
+        Basic.circleStrokeBackgroundColor = UIColor.white
+        Basic.circleSize = 80.0
+        Basic.lineWidth = 1.5
+        Basic.isFullScreen = false
+        Basic.backgroundFillColor = UIColor(red: 255/255, green: 212/255, blue: 0/255, alpha: 0.9)
+        
+        KVNProgress.setConfiguration(Basic)
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

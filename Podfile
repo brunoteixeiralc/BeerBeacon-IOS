@@ -7,5 +7,6 @@ target 'BeerBeacon' do
   pod 'YBAlertController'
   pod 'SCLAlertView'
   pod 'Firebase/Database'
+  pod 'KVNProgress'
 
 end

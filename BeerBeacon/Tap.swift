@@ -9,6 +9,15 @@
 import Foundation
 import Firebase
 
+extension Date {
+    func toString(format: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
+    }
+}
+
+
 class Tap {
     
     var abv = ""
@@ -18,12 +27,14 @@ class Tap {
     var estilo = ""
     var nota = ""
     var torneira = ""
+    var data_entrada = 0
     var medidas = [Medida]()
-   
+    var data_plug = ""
+    var hora_plug = ""
     
     private let tapRef = FIRDatabase.database().reference().child("taps")
     
-    init(abv:String,ibu:Int,cerveja:String,cervejaria:String,estilo:String,nota:String,torneira:String,medidas:[Medida]) {
+    init(abv:String,ibu:Int,cerveja:String,cervejaria:String,estilo:String,nota:String,torneira:String,medidas:[Medida],hora_plug:String,data_plug:String) {
         self.abv = abv
         self.ibu = ibu
         self.cerveja = cerveja
@@ -32,6 +43,8 @@ class Tap {
         self.nota = nota
         self.torneira = torneira
         self.medidas = medidas
+        self.hora_plug = hora_plug
+        self.data_plug = data_plug
     }
     
     init(snapshot: FIRDataSnapshot)
@@ -44,6 +57,19 @@ class Tap {
             cervejaria = value["cervejaria"] as! String
             estilo = value["estilo"] as! String
             nota = value["nota"] as! String
+            data_entrada = Int(value["data_entrada"] as! NSNumber)
+            
+            let date = NSDate(timeIntervalSince1970: TimeInterval(data_entrada))
+            NSTimeZone.default = TimeZone(abbreviation: "GMT")!
+            let dtFmt = DateFormatter()
+            dtFmt.timeZone = NSTimeZone.default
+            
+            dtFmt.dateFormat = "dd/MM/YY"
+            data_plug = dtFmt.string(from: date as Date)
+            
+            dtFmt.dateFormat = "HH:mm:ss"
+            hora_plug = dtFmt.string(from: date as Date)
+            
             let medidaSnap = snapshot.childSnapshot(forPath: "medidas").children
             while let m = medidaSnap.nextObject() as? FIRDataSnapshot {
                 let med = Medida(preco: (m.value as? [String:Any])?["preco"] as! String, quantidade: (m.value as? [String:Any])?["quantidade"] as! String)

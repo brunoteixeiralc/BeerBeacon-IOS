@@ -42,6 +42,9 @@ open class FoldingCell: UITableViewCell {
   
   @IBOutlet weak open var containerView: UIView!
   @IBOutlet weak open var containerViewTop: NSLayoutConstraint!
+    
+  @IBOutlet weak var data_plugado: UILabel!
+  @IBOutlet weak var hora_plugado: UILabel!
   
   /// UIView whitch display when cell close
   @IBOutlet weak open var foregroundView: RotatedView!
@@ -52,7 +55,7 @@ open class FoldingCell: UITableViewCell {
   @IBInspectable open var itemCount: NSInteger = 2
   
   /// The color of the back cell
-  @IBInspectable open var backViewColor: UIColor = UIColor.brown
+  @IBInspectable open var backViewColor: UIColor = UIColor.clear
   
   var animationItemViews: [RotatedView]?
   
@@ -93,6 +96,8 @@ open class FoldingCell: UITableViewCell {
           ibu_interno.text = String(tap.ibu)
           estilo_interno.text = tap.estilo
           estilo.text = tap.estilo
+          data_plugado.text = tap.data_plug
+          hora_plugado.text = tap.hora_plug
           
           op1_copo.text = tap.medidas[0].quantidade
           op1_preco.text = "R$ \(tap.medidas[0].preco)"
