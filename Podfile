@@ -8,5 +8,6 @@ target 'BeerBeacon' do
   pod 'SCLAlertView'
   pod 'Firebase/Database'
   pod 'KVNProgress'
+  pod 'Kingfisher', '~> 3.0'
 
 end

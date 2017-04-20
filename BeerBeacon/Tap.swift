@@ -31,10 +31,12 @@ class Tap {
     var medidas = [Medida]()
     var data_plug = ""
     var hora_plug = ""
+    var cervejaria_img_url = ""
+    var cerveja_img_url = ""
     
     private let tapRef = FIRDatabase.database().reference().child("taps")
     
-    init(abv:String,ibu:Int,cerveja:String,cervejaria:String,estilo:String,nota:String,torneira:String,medidas:[Medida],hora_plug:String,data_plug:String) {
+    init(abv:String,ibu:Int,cerveja:String,cervejaria:String,estilo:String,nota:String,torneira:String,medidas:[Medida],hora_plug:String,data_plug:String,cervejaria_img_url:String,cerveja_img_url:String) {
         self.abv = abv
         self.ibu = ibu
         self.cerveja = cerveja
@@ -45,6 +47,8 @@ class Tap {
         self.medidas = medidas
         self.hora_plug = hora_plug
         self.data_plug = data_plug
+        self.cervejaria_img_url = cervejaria_img_url
+        self.cerveja_img_url = cerveja_img_url
     }
     
     init(snapshot: FIRDataSnapshot)
@@ -58,6 +62,8 @@ class Tap {
             estilo = value["estilo"] as! String
             nota = value["nota"] as! String
             data_entrada = Int(value["data_entrada"] as! NSNumber)
+            cervejaria_img_url = value["img_cervejaria"] as! String
+            cerveja_img_url = value["img_cerveja"] as! String
             
             let date = NSDate(timeIntervalSince1970: TimeInterval(data_entrada))
             NSTimeZone.default = TimeZone(abbreviation: "GMT")!

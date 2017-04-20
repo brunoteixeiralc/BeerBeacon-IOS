@@ -22,6 +22,7 @@
 // THE SOFTWARE.
 
 import UIKit
+import Kingfisher
 
 /// UITableViewCell with folding animation
 open class FoldingCell: UITableViewCell {
@@ -45,6 +46,11 @@ open class FoldingCell: UITableViewCell {
     
   @IBOutlet weak var data_plugado: UILabel!
   @IBOutlet weak var hora_plugado: UILabel!
+    
+  @IBOutlet weak var cerveja_interno: UILabel!
+  @IBOutlet weak var cervejaria_img: UIImageView!
+  @IBOutlet weak var cerveja_img: UIImageView!
+  @IBOutlet weak var nota: UILabel!
   
   /// UIView whitch display when cell close
   @IBOutlet weak open var foregroundView: RotatedView!
@@ -89,6 +95,7 @@ open class FoldingCell: UITableViewCell {
     var tap:Tap!{
         didSet{
           cerveja.text = tap.cerveja
+          cerveja_interno.text = tap.cerveja
           cervejaria.text = tap.cervejaria
           abv.text = tap.abv
           abv_interno.text = tap.abv
@@ -98,11 +105,22 @@ open class FoldingCell: UITableViewCell {
           estilo.text = tap.estilo
           data_plugado.text = tap.data_plug
           hora_plugado.text = tap.hora_plug
+          nota.text = tap.nota
           
           op1_copo.text = tap.medidas[0].quantidade
           op1_preco.text = "R$ \(tap.medidas[0].preco)"
           op2_copo.text = tap.medidas[1].quantidade
           op2_preco.text = "R$ \(tap.medidas[1].preco)"
+            
+          let urlCv = URL(string: tap.cerveja_img_url)
+          cerveja_img.kf.setImage(with: urlCv, options: [.transition(.fade(0.2))])
+          cerveja_img.kf.indicatorType = .activity
+          cerveja_img.kf.setImage(with: urlCv)
+            
+          let urlCj = URL(string: tap.cervejaria_img_url)
+          cervejaria_img.kf.setImage(with: urlCj, options: [.transition(.fade(0.2))])
+          cervejaria_img.kf.indicatorType = .activity
+          cervejaria_img.kf.setImage(with: urlCj)
         }
     }
   
