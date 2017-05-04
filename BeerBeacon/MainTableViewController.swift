@@ -44,7 +44,7 @@ class MainTableViewController: UITableViewController {
         super.viewWillAppear(true)
         
         setupConfig()
-        KVNProgress.show(withStatus: "Carregando os taps", on: view)
+        KVNProgress.show(withStatus: "Carregando", on: view)
     }
 
     override func viewDidAppear(_ animated: Bool) {

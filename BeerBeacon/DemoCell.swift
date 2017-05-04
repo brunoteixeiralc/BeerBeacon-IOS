@@ -75,7 +75,7 @@ extension DemoCell {
         alertController.cancelButtonTitle = "Cancelar"
         for i in 1 ..< 6 {
             if(i == 1){
-                alertController.addButton(UIImage(named: "hop"), title: "\(i) cerveja", action: {
+                alertController.addButton(UIImage(named: "cup"), title: "\(String(describing: String(i.format(f: "02"))))", action: {
                     
                     SCLAlertView().showTitle(
                         "Cheers!",
@@ -89,7 +89,7 @@ extension DemoCell {
                     
                 })
             }else{
-                alertController.addButton(UIImage(named: "hop"), title: "\(i) cervejas", action: {
+                alertController.addButton(UIImage(named: "cup"), title: "\(String(describing: String(i.format(f: "02"))))", action: {
                     
                     SCLAlertView().showTitle(
                         "Cheers!",
@@ -104,6 +104,7 @@ extension DemoCell {
                 })
             }
         }
+        
         alertController.show()
         
     }else{

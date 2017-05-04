@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0cn-rv-Emg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0cn-rv-Emg">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -51,34 +51,46 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UhV-pr-kw4" userLabel="LeftView">
                                                     <rect key="frame" x="0.0" y="0.0" width="88" height="165"/>
                                                     <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZSa-qf-gjM">
+                                                            <rect key="frame" x="0.0" y="48" width="88" height="117"/>
+                                                        </imageView>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05/04/17" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQM-r1-a67">
+                                                            <rect key="frame" x="18" y="101.33333333333331" width="41.666666666666671" height="13.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
+                                                            <color key="textColor" red="1" green="0.83137254900000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06:30 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ka-ho-kkM">
+                                                            <rect key="frame" x="12" y="119" width="56" height="18"/>
+                                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                                                            <color key="textColor" red="1" green="0.83137254900000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5z-LV-gfp">
+                                                            <rect key="frame" x="0.0" y="0.0" width="88" height="49"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWG-zH-Vjo">
-                                                            <rect key="frame" x="19" y="31.333333333333332" width="43" height="33"/>
+                                                            <rect key="frame" x="19" y="11" width="43" height="33"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="24"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05/04/17" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQM-r1-a67">
-                                                            <rect key="frame" x="18" y="101.33333333333331" width="41.666666666666671" height="13.666666666666671"/>
-                                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06:30 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ka-ho-kkM">
-                                                            <rect key="frame" x="12" y="119" width="56" height="18"/>
-                                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="1" green="0.83137254901960778" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="88" id="79O-5u-rWy"/>
-                                                        <constraint firstItem="uWG-zH-Vjo" firstAttribute="centerY" secondItem="UhV-pr-kw4" secondAttribute="centerY" constant="-35" id="BKr-4U-Xpn"/>
+                                                        <constraint firstItem="uWG-zH-Vjo" firstAttribute="centerY" secondItem="UhV-pr-kw4" secondAttribute="centerY" constant="-55" id="BKr-4U-Xpn"/>
                                                         <constraint firstItem="9ka-ho-kkM" firstAttribute="leading" secondItem="UhV-pr-kw4" secondAttribute="leading" constant="12" id="Cay-aa-P2d"/>
                                                         <constraint firstItem="uWG-zH-Vjo" firstAttribute="centerX" secondItem="UhV-pr-kw4" secondAttribute="centerX" constant="-4" id="JBk-n5-unF"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ZSa-qf-gjM" secondAttribute="bottom" id="UMT-4d-TPJ"/>
                                                         <constraint firstAttribute="bottom" secondItem="9ka-ho-kkM" secondAttribute="bottom" constant="28" id="bej-dB-MVA"/>
                                                         <constraint firstItem="FQM-r1-a67" firstAttribute="leading" secondItem="UhV-pr-kw4" secondAttribute="leading" constant="18" id="c48-WJ-cDt"/>
                                                         <constraint firstAttribute="bottom" secondItem="FQM-r1-a67" secondAttribute="bottom" constant="50" id="ccu-aB-Y5n"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ZSa-qf-gjM" secondAttribute="trailing" id="d91-IY-z9I"/>
+                                                        <constraint firstItem="ZSa-qf-gjM" firstAttribute="leading" secondItem="UhV-pr-kw4" secondAttribute="leading" id="dji-01-gL4"/>
+                                                        <constraint firstItem="ZSa-qf-gjM" firstAttribute="top" secondItem="UhV-pr-kw4" secondAttribute="top" constant="48" id="p6F-9D-SmQ"/>
                                                     </constraints>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="item_beer" translatesAutoresizingMaskIntoConstraints="NO" id="lOX-iD-3OO">
@@ -225,7 +237,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="560" height="49"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# 2618-3157" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eb-NE-XLS">
-                                                                    <rect key="frame" x="228.33333333333331" y="12.333333333333343" width="104.33333333333331" height="24.666666666666657"/>
+                                                                    <rect key="frame" x="228.33333333333331" y="12.666666666666657" width="104.33333333333331" height="24.666666666666686"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="18"/>
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -310,7 +322,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,5%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwZ-qm-hHf">
-                                                            <rect key="frame" x="257.33333333333326" y="97.666666666666686" width="45.666666666666686" height="27.333333333333314"/>
+                                                            <rect key="frame" x="257.66666666666669" y="97.666666666666686" width="45.666666666666629" height="27.333333333333314"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="20"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -656,6 +668,7 @@
                                     <outlet property="abv" destination="a0P-Eh-vI9" id="S14-Fv-v46"/>
                                     <outlet property="abv_interno" destination="DwZ-qm-hHf" id="KpH-Z9-AQB"/>
                                     <outlet property="cerveja" destination="mNy-cH-kEi" id="7lW-Sy-6px"/>
+                                    <outlet property="cerveja_ext_img" destination="ZSa-qf-gjM" id="igt-w9-wRl"/>
                                     <outlet property="cerveja_img" destination="nIW-FK-nY3" id="gYa-Z8-MsN"/>
                                     <outlet property="cerveja_interno" destination="ax5-gv-o7S" id="ViG-UP-FKS"/>
                                     <outlet property="cervejaria" destination="BUL-Of-nxF" id="fZk-oh-2Dt"/>

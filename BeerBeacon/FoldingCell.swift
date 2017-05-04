@@ -51,6 +51,7 @@ open class FoldingCell: UITableViewCell {
   @IBOutlet weak var cervejaria_img: UIImageView!
   @IBOutlet weak var cerveja_img: UIImageView!
   @IBOutlet weak var nota: UILabel!
+  @IBOutlet weak var cerveja_ext_img: UIImageView!
   
   /// UIView whitch display when cell close
   @IBOutlet weak open var foregroundView: RotatedView!
@@ -116,6 +117,10 @@ open class FoldingCell: UITableViewCell {
           cerveja_img.kf.setImage(with: urlCv, options: [.transition(.fade(0.2))])
           cerveja_img.kf.indicatorType = .activity
           cerveja_img.kf.setImage(with: urlCv)
+          
+          cerveja_ext_img.kf.setImage(with: urlCv, options: [.transition(.fade(0.2))])
+          cerveja_ext_img.kf.indicatorType = .activity
+          cerveja_ext_img.kf.setImage(with: urlCv)
             
           let urlCj = URL(string: tap.cervejaria_img_url)
           cervejaria_img.kf.setImage(with: urlCj, options: [.transition(.fade(0.2))])
