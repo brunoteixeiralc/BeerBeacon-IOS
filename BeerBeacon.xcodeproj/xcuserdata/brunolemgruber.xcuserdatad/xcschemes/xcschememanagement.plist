@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>OneSignalNotificationServiceExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>F4A8EB561E54990200580285</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4C275501EC2C85C00A032D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

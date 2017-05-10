@@ -68,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BeerBeacon/AppDelegate.swift"
-            timestampString = "513236120.852995"
+            timestampString = "516082697.177631"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -177,11 +177,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BeerBeacon/AppDelegate.swift"
-            timestampString = "513235867.539948"
+            timestampString = "516082697.177631"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "AppDelegate"
             landmarkType = "3">
             <Locations>
@@ -352,11 +352,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BeerBeacon/FoldingCell.swift"
-            timestampString = "514947391.118807"
+            timestampString = "516080053.626413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
+            startingLineNumber = "318"
+            endingLineNumber = "318"
             landmarkName = "addImageItemsToAnimationView()"
             landmarkType = "7">
             <Locations>
@@ -416,11 +416,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BeerBeacon/FoldingCell.swift"
-            timestampString = "514948573.202756"
+            timestampString = "516080053.626413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "343"
-            endingLineNumber = "343"
+            startingLineNumber = "351"
+            endingLineNumber = "351"
             landmarkName = "selectedAnimation(_:animated:completion:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -28,6 +28,7 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.1)
   - Kingfisher (3.3.2)
   - KVNProgress (2.3.1)
+  - OneSignal (2.5.2)
   - SCLAlertView (0.7.0)
   - YBAlertController (0.1.2)
 
@@ -37,6 +38,7 @@ DEPENDENCIES:
   - FoldingCell
   - Kingfisher (~> 3.0)
   - KVNProgress
+  - OneSignal (< 3.0, >= 2.5.2)
   - SCLAlertView
   - YBAlertController
 
@@ -53,9 +55,10 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   Kingfisher: 8e60094454aeb4746eb588eb57f794d891c6ea88
   KVNProgress: 8167b1f19e2758290c0b6143020ed9dcbb0477a1
+  OneSignal: 66d08b6b1e3c3858cbf28207ed20f1fa865ab2a2
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   YBAlertController: 68e8874813d1d9a5c76d72e5bb927e18f2d1afb8
 
-PODFILE CHECKSUM: afaae2a0740816d44aa1b2db6b6478ce574d0975
+PODFILE CHECKSUM: 663037b5a100ece1afdc51a870775a3052466a3c
 
 COCOAPODS: 1.0.1

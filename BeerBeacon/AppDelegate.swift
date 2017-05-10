@@ -9,6 +9,7 @@
 import UIKit
 import UserNotifications
 import Firebase
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,ESTSecureBeaconManagerDelegate {
@@ -21,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,ESTSecureBeaconManagerDele
     let beaconManager = ESTSecureBeaconManager()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "42f9ce69-ceea-42b3-8639-68e0ecf6f9f6")
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
        
         FIRApp.configure()
         

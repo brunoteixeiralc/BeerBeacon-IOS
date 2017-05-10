@@ -73,12 +73,12 @@ open class YBAlertController: UIViewController, UIGestureRecognizerDelegate {
         containerView.backgroundColor = UIColor.white
         containerView.clipsToBounds = true
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: Selector("dismiss"))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(YBAlertController.dismiss as (YBAlertController) -> () -> ()))
         tapGesture.numberOfTapsRequired = 1
         tapGesture.delegate = self
         self.view.addGestureRecognizer(tapGesture)
         
-        NotificationCenter.default.addObserver(self, selector: Selector("changedOrientation:"), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(YBAlertController.changedOrientation(_:)), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
     }
     
     public convenience init(style: YBAlertControllerStyle) {
@@ -299,7 +299,7 @@ open class YBAlertController: UIViewController, UIGestureRecognizerDelegate {
             cancelButton.titleLabel?.font = cancelButtonFont
             cancelButton.setTitle(cancelButtonTitle, for: UIControlState())
             cancelButton.setTitleColor(cancelButtonTextColor, for: UIControlState())
-            cancelButton.addTarget(self, action: Selector("dismiss"), for: .touchUpInside)
+            cancelButton.addTarget(self, action: #selector(YBAlertController.dismiss as (YBAlertController) -> () -> ()), for: .touchUpInside)
             containerView.addSubview(cancelButton)
             posY += cancelButton.frame.height
         }
@@ -377,7 +377,7 @@ open class YBAlertController: UIViewController, UIGestureRecognizerDelegate {
         button.action = action
         button.buttonColor = buttonIconColor
         button.buttonFont = buttonFont
-        button.addTarget(self, action: Selector("buttonTapped:"), for: .touchUpInside)
+        button.addTarget(self, action: #selector(YBAlertController.buttonTapped(_:)), for: .touchUpInside)
         buttons.append(button)
     }
     
@@ -388,7 +388,7 @@ open class YBAlertController: UIViewController, UIGestureRecognizerDelegate {
         button.target = target
         button.selector = selector
         button.buttonFont = buttonFont
-        button.addTarget(self, action: Selector("buttonTapped:"), for: .touchUpInside)
+        button.addTarget(self, action: #selector(YBAlertController.buttonTapped(_:)), for: .touchUpInside)
         buttons.append(button)
     }
     
