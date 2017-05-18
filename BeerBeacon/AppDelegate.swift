@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,ESTSecureBeaconManagerDele
         OneSignal.initWithLaunchOptions(launchOptions, appId: "42f9ce69-ceea-42b3-8639-68e0ecf6f9f6")
         OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
        
-        FIRApp.configure()
+        FirebaseApp.configure()
         
         ESTConfig.setupAppID("beerbeacon-lju", andAppToken: "a97dcc9e7ad472e291b61cc8680297dc")
         

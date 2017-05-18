@@ -50,12 +50,12 @@ class MainTableViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        FIRDatabase.database().reference().child("taps").queryOrdered(byChild: "status").queryEqual(toValue: "ativado").observe(.value, with: { (snapshot) in
+        Database.database().reference().child("taps").queryOrdered(byChild: "status").queryEqual(toValue: "ativado").observe(.value, with: { (snapshot) in
             
             self.taps.removeAll()
             
             for child in snapshot.children{
-                let tap = Tap(snapshot: child as! FIRDataSnapshot)
+                let tap = Tap(snapshot: child as! DataSnapshot)
                 self.taps.append(tap)
             }
             

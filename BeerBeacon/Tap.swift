@@ -34,7 +34,7 @@ class Tap {
     var cervejaria_img_url = ""
     var cerveja_img_url = ""
     
-    private let tapRef = FIRDatabase.database().reference().child("taps")
+    private let tapRef = Database.database().reference().child("taps")
     
     init() {
 
@@ -55,7 +55,7 @@ class Tap {
         self.cerveja_img_url = cerveja_img_url
     }
     
-    init(snapshot: FIRDataSnapshot)
+    init(snapshot: DataSnapshot)
     {
         if let value = snapshot.value as? [String : Any] {
             torneira = snapshot.key
@@ -81,7 +81,7 @@ class Tap {
             hora_plug = dtFmt.string(from: date as Date)
             
             let medidaSnap = snapshot.childSnapshot(forPath: "medidas").children
-            while let m = medidaSnap.nextObject() as? FIRDataSnapshot {
+            while let m = medidaSnap.nextObject() as? DataSnapshot {
                 let med = Medida(preco: (m.value as? [String:Any])?["preco"] as! String, quantidade: (m.value as? [String:Any])?["quantidade"] as! String)
                 medidas.append(med)
             }
