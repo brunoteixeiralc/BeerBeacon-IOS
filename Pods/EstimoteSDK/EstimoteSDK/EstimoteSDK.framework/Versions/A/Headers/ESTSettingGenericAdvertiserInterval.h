@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ESTSettingReadWrite.h"
-#import "ESTGenericAdvertiser.h"
+#import "ESTGenericAdvertiserID.h"
 
 #define ESTSettingGenericAdvertiserIntervalErrorDomain @"ESTSettingGenericAdvertiserIntervalErrorDomain"
 
@@ -28,6 +28,10 @@ typedef NS_ENUM(NSUInteger, ESTSettingGenericAdvertiserIntervalError)
      *  Provided value is too big.
      */
     ESTSettingGenericAdvertiserIntervalErrorValueTooBig,
+    /**
+     *  Provided Advertiser ID is invalid.
+     */
+    ESTSettingGenericAdvertiserIntervalErrorInvalidAdvertiserID
 };
 
 @class ESTSettingGenericAdvertiserInterval;
@@ -103,11 +107,12 @@ typedef void(^ESTSettingGenericAdvertiserIntervalCompletionBlock)(ESTSettingGene
 /**
  *  Method checks if provided value is allowed. Returns nil if validation passes.
  *
- *  @param genericAdvertiserInterval GenericAdvertiserInterval value.
+ *  @param interval     GenericAdvertiser Interval value.
+ *  @param advertiserID GenericAdvertiser ID.
  *
  *  @return Error object describing why validation failed. Nil if validation passes.
  */
-+ (NSError * _Nullable)validationErrorForValue:(unsigned short)genericAdvertiserInterval;
++ (NSError * _Nullable)validationErrorForValue:(unsigned short)interval advertiserID:(ESTGenericAdvertiserID)advertiserID;
 
 @end
 

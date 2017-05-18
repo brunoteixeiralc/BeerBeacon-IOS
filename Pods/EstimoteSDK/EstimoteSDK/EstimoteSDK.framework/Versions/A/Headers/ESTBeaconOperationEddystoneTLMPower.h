@@ -12,7 +12,7 @@
 #import <Foundation/Foundation.h>
 #import "ESTBeaconOperationProtocol.h"
 #import "ESTSettingOperation.h"
-#import "ESTSettingEddystoneTLMpower.h"
+#import "ESTSettingEddystoneTLMPower.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -13,7 +13,7 @@
 #import "ESTBeaconOperationProtocol.h"
 #import "ESTSettingOperation.h"
 #import "ESTSettingGenericAdvertiserPower.h"
-#import "ESTGenericAdvertiser.h"
+#import "ESTGenericAdvertiserID.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

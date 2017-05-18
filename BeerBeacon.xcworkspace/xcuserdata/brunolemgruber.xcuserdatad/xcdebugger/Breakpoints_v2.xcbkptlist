@@ -4,28 +4,18 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            scope = "0"
-            stopOnStyle = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "BeerBeacon/DemoCell.swift"
-            timestampString = "513648063.308509"
+            timestampString = "516764339.811107"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "awakeFromNib()"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "buttonHandler(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -35,137 +25,74 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/DemoCell.swift"
-            timestampString = "513648063.308509"
+            filePath = "BeerBeacon/QRCodeViewController.swift"
+            timestampString = "516764339.811107"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "stateChangedOption1()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/DemoCell.swift"
-            timestampString = "513648063.308509"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "stateChangedOption2()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/AppDelegate.swift"
-            timestampString = "516082697.177631"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/MainTableViewController.swift"
-            timestampString = "513659002.279997"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "MainTableViewController"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "QRCodeViewController"
             landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BeerBeacon.MainTableViewController.cellHeights.getter : Swift.Array&lt;CoreGraphics.CGFloat&gt;"
+                  symbolName = "BeerBeacon.QRCodeViewController.messagem.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
                   moduleName = "BeerBeacon"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/MainTableViewController.swift"
-                  timestampString = "513648947.335565"
+                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/QRCodeViewController.swift"
+                  timestampString = "516762889.111578"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "38">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "40">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BeerBeacon.MainTableViewController.cellHeights.setter : Swift.Array&lt;CoreGraphics.CGFloat&gt;"
+                  symbolName = "BeerBeacon.QRCodeViewController.messagem.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
                   moduleName = "BeerBeacon"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/MainTableViewController.swift"
-                  timestampString = "513648947.336763"
+                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/QRCodeViewController.swift"
+                  timestampString = "516762889.113385"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "76">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "52">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BeerBeacon.MainTableViewController.init (style : __C.UITableViewStyle) -&gt; BeerBeacon.MainTableViewController"
+                  symbolName = "BeerBeacon.QRCodeViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; BeerBeacon.QRCodeViewController"
                   moduleName = "BeerBeacon"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/MainTableViewController.swift"
-                  timestampString = "513648947.337935"
+                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/QRCodeViewController.swift"
+                  timestampString = "516762889.115049"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "145">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "176">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BeerBeacon.MainTableViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; BeerBeacon.MainTableViewController"
+                  symbolName = "BeerBeacon.QRCodeViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;BeerBeacon.QRCodeViewController&gt;"
                   moduleName = "BeerBeacon"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/MainTableViewController.swift"
-                  timestampString = "513648947.339209"
+                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/QRCodeViewController.swift"
+                  timestampString = "516762889.11655"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "201">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BeerBeacon.MainTableViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;BeerBeacon.MainTableViewController&gt;"
-                  moduleName = "BeerBeacon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/MainTableViewController.swift"
-                  timestampString = "513648947.340607"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "145">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "136">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -173,256 +100,111 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/AppDelegate.swift"
-            timestampString = "516082697.177631"
+            filePath = "BeerBeacon/QRCodeViewController.swift"
+            timestampString = "516764339.811107"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "AppDelegate"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "captureOutput(_:didOutputMetadataObjects:from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BeerBeacon/DemoCell.swift"
+            timestampString = "516764339.811107"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "buttonHandler(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BeerBeacon/QRCodeViewController.swift"
+            timestampString = "516764297.812767"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "QRCodeViewController"
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BeerBeacon.AppDelegate.window.getter : Swift.Optional&lt;__ObjC.UIWindow&gt;"
+                  symbolName = "BeerBeacon.QRCodeViewController.option.getter : __ObjC.UISwitch"
                   moduleName = "BeerBeacon"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/AppDelegate.swift"
-                  timestampString = "513236197.514515"
+                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/QRCodeViewController.swift"
+                  timestampString = "516764341.10631"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "38">
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "48">
                </Location>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BeerBeacon.AppDelegate.window.setter : Swift.Optional&lt;__ObjC.UIWindow&gt;"
+                  symbolName = "BeerBeacon.QRCodeViewController.option.setter : __ObjC.UISwitch"
                   moduleName = "BeerBeacon"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/AppDelegate.swift"
-                  timestampString = "513236197.515837"
+                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/QRCodeViewController.swift"
+                  timestampString = "516764341.108043"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
                   offsetFromSymbolStart = "76">
                </Location>
                <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BeerBeacon.AppDelegate.init () -&gt; BeerBeacon.AppDelegate"
-                  moduleName = "BeerBeacon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/AppDelegate.swift"
-                  timestampString = "513236197.517081"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "34">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/MainTableViewController.swift"
-            timestampString = "513659465.955815"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BeerBeacon.MainTableViewController.viewDidAppear (Swift.Bool) -&gt; ()"
-                  moduleName = "BeerBeacon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/MainTableViewController.swift"
-                  timestampString = "513648947.345136"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "144">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BeerBeacon.MainTableViewController.(viewDidAppear (Swift.Bool) -&gt; ()).(closure #1)"
-                  moduleName = "BeerBeacon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/MainTableViewController.swift"
-                  timestampString = "513648947.346646"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "30">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/MainTableViewController.swift"
-            timestampString = "513659465.955815"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/Tap.swift"
-            timestampString = "514354199.592482"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "init(snapshot:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/Tap.swift"
-            timestampString = "514354199.592482"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "init(abv:ibu:cerveja:cervejaria:estilo:nota:torneira:medidas:hora_plug:data_plug:cervejaria_img_url:cerveja_img_url:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/Tap.swift"
-            timestampString = "514354199.592482"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "init(abv:ibu:cerveja:cervejaria:estilo:nota:torneira:medidas:hora_plug:data_plug:cervejaria_img_url:cerveja_img_url:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/FoldingCell.swift"
-            timestampString = "516080053.626413"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "318"
-            endingLineNumber = "318"
-            landmarkName = "addImageItemsToAnimationView()"
-            landmarkType = "7">
-            <Locations>
-               <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BeerBeacon.FoldingCell.addImageItemsToAnimationView () -&gt; ()"
+                  symbolName = "BeerBeacon.QRCodeViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; BeerBeacon.QRCodeViewController"
                   moduleName = "BeerBeacon"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/FoldingCell.swift"
-                  timestampString = "514948677.509404"
+                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/QRCodeViewController.swift"
+                  timestampString = "516764341.110211"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "310"
-                  endingLineNumber = "310"
-                  offsetFromSymbolStart = "5676">
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "392">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BeerBeacon.FoldingCell.addImageItemsToAnimationView () -&gt; ()"
+                  symbolName = "BeerBeacon.QRCodeViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;BeerBeacon.QRCodeViewController&gt;"
                   moduleName = "BeerBeacon"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/FoldingCell.swift"
-                  timestampString = "514948677.51088"
+                  urlString = "file:///Users/brunolemgruber/XcodeProjects/BeerBeacon/BeerBeacon/QRCodeViewController.swift"
+                  timestampString = "516764341.111951"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "310"
-                  endingLineNumber = "310"
-                  offsetFromSymbolStart = "5732">
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "336">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/MainTableViewController.swift"
-            timestampString = "513659465.955815"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BeerBeacon/FoldingCell.swift"
-            timestampString = "516080053.626413"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "351"
-            endingLineNumber = "351"
-            landmarkName = "selectedAnimation(_:animated:completion:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

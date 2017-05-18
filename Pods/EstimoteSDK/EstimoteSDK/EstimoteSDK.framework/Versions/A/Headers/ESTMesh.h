@@ -37,7 +37,11 @@ typedef NS_ENUM(NSInteger, ESTMeshError)
     /**
      *  Failed to add device to the Mesh network in the Cloud.
      */
-    ESTMeshErrorAddingDeviceFailed
+    ESTMeshErrorAddingDeviceFailed,
+    /**
+     *  Failed to remove device from the Mesh network in the Cloud.
+     */
+    ESTMeshErrorRemovingDeviceFailed
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -66,17 +70,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  List of devices that Mesh consists of. Each device has already applied Mesh network's settings.
  */
-@property (nonatomic, strong, readwrite) NSArray <ESTDeviceLocationBeacon *> *devices;
+@property (nonatomic, strong, readwrite) NSArray <NSString *> *devices;
 
 /**
  *  Mesh network's settings shared among all devices included in the Mesh.
  */
 @property (nonatomic, strong, readonly) ESTDeviceSettings *settings;
-
-/**
- *  Mesh network's settings version in form of timestamp.
- */
-@property (nonatomic, assign, readonly) NSTimeInterval settingsVersion;
 
 /**
  *  Method allows to initialize Mesh network object.
@@ -95,6 +94,15 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param  completion  Completion block with operation result. Nil error means success.
  */
 - (void)addDevice:(ESTDeviceLocationBeacon *)device completion:(ESTCompletionBlock)completion;
+
+
+/**
+ *  Removes device from Mesh network.
+ *
+ *  @param device     Presently connected device you want to remove from Mesh.
+ *  @param completion Completion block with result. Error of nil value means that the request was successful.
+ */
+- (void)removeDevice:(ESTDeviceLocationBeacon *)device completion:(ESTCompletionBlock)completion;
 
 @end
 

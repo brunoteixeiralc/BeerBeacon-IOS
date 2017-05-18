@@ -36,6 +36,10 @@ typedef NS_ENUM(NSInteger, ESTRequestBaseError)
      */
     ESTRequestBaseErrorUnauthorized = 401,
     /**
+     * The server is refusing to respond to the request, the resource is not available for the current subscription plan. Please see https://estimote.com/#saas for more details.
+     */
+    ESTRequestBaseErrorPaymentRequired = 402,
+    /**
      * The server is refusing to respond to the request, the user does not have the necessary permissions for the resource.
      */
     ESTRequestBaseErrorForbidden = 403,

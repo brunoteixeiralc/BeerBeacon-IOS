@@ -10,6 +10,7 @@
 		8227B852BFE644DF298A6A8E /* Pods_BeerBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0399521B5B9296EDDA04D9 /* Pods_BeerBeacon.framework */; };
 		E1308F894AEE3E1774401379 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73400F941BCAC685B8EA9692 /* libPods-OneSignalNotificationServiceExtension.a */; };
 		F48F8FC71E9BF059007A5066 /* Medida.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48F8FC61E9BF059007A5066 /* Medida.swift */; };
+		F4A2A8781ECD17CD00FFA3CC /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2A8771ECD17CD00FFA3CC /* QRCodeViewController.swift */; };
 		F4A8EB3C1E54990200580285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB3B1E54990200580285 /* AppDelegate.swift */; };
 		F4A8EB411E54990200580285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A8EB3F1E54990200580285 /* Main.storyboard */; };
 		F4A8EB431E54990200580285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A8EB421E54990200580285 /* Assets.xcassets */; };
@@ -74,6 +75,7 @@
 		CDCCBA6C67AC2C713BBE4DE2 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		F45677721E573D15002709EF /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		F48F8FC61E9BF059007A5066 /* Medida.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medida.swift; sourceTree = "<group>"; };
+		F4A2A8771ECD17CD00FFA3CC /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		F4A8EB381E54990200580285 /* BeerBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A8EB3B1E54990200580285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4A8EB401E54990200580285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				F4A8EB3B1E54990200580285 /* AppDelegate.swift */,
 				F4A8EB8F1E54A02900580285 /* FoldingCell.swift */,
 				F4A8EB691E549C0F00580285 /* MainTableViewController.swift */,
+				F4A2A8771ECD17CD00FFA3CC /* QRCodeViewController.swift */,
 				F4A8EB3F1E54990200580285 /* Main.storyboard */,
 				F4A8EB6B1E549C4E00580285 /* DemoCell.swift */,
 				F4A8EB421E54990200580285 /* Assets.xcassets */,
@@ -550,6 +553,7 @@
 				F4BA7BB61E97531000CA1C50 /* Tap.swift in Sources */,
 				F4A8EB6D1E549C4E00580285 /* DemoCell.swift in Sources */,
 				F4A8EB901E54A02900580285 /* FoldingCell.swift in Sources */,
+				F4A2A8781ECD17CD00FFA3CC /* QRCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

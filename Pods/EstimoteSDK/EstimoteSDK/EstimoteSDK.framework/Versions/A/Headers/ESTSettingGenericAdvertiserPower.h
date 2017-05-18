@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ESTSettingReadWrite.h"
-#import "ESTGenericAdvertiser.h"
+#import "ESTGenericAdvertiserID.h"
 
 #define ESTSettingGenericAdvertiserPowerErrorDomain @"ESTSettingGenericAdvertiserPowerErrorDomain"
 
@@ -37,7 +37,11 @@ typedef NS_ENUM(NSUInteger, ESTSettingGenericAdvertiserPowerError)
      /**
      *  Provided value not allowed.
      */
-    ESTSettingGenericAdvertiserPowerErrorValueNotAllowed = 1
+    ESTSettingGenericAdvertiserPowerErrorValueNotAllowed = 1,
+    /**
+     *  Provided Advertiser ID is invalid.
+     */
+    ESTSettingGenericAdvertiserPowerErrorInvalidAdvertiserID
 };
 
 @class ESTSettingGenericAdvertiserPower;
@@ -111,11 +115,12 @@ typedef void(^ESTSettingGenericAdvertiserPowerCompletionBlock)(ESTSettingGeneric
 /**
  *  Method checks if provided value is allowed. Returns nil if validation passes.
  *
- *  @param genericAdvertiserPower GenericAdvertiserPower value.
+ *  @param power        GenericAdvertiser Power value.
+ *  @param advertiserID GenericAdvertiser ID.
  *
  *  @return Error object describing why validation failed. Nil if validation passes.
  */
-+ (NSError * _Nullable)validationErrorForValue:(ESTGenericAdvertiserPowerLevel)genericAdvertiserPower;
++ (NSError * _Nullable)validationErrorForValue:(ESTGenericAdvertiserPowerLevel)power advertiserID:(ESTGenericAdvertiserID)advertiserID;
 
 @end
 

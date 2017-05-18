@@ -33,7 +33,9 @@ typedef void(^ESTRequestV2GetDeviceDetailsBlock)(ESTDeviceDetails * _Nullable de
 /**
  *  Initialize request with device identifier.
  *
- *  @param deviceIdentifier Identifier of the device.
+ *  Object will not be initialized if provided identifier will be an empty string.
+ *
+ *  @param deviceIdentifier Identifier of the device. Identifier should not be an empty string.
  *
  *  @return Initialized object.
  */

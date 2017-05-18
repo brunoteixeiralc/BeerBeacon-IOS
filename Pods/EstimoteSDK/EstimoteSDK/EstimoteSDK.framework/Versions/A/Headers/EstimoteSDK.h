@@ -7,7 +7,7 @@
 //  |______|___/\__|_|_| |_| |_|\___/ \__\___| |_____/|_____/|_|\_\
 //
 //
-//  Version: 4.12.2
+//  Version: 4.14.1
 //  Copyright (c) 2016 Estimote. All rights reserved.
 
 /**
@@ -387,6 +387,11 @@
 #import "ESTMesh.h"
 
 /**
+ *  Cloud API v3 requests
+ */
+#import "ESTRequestV3GetFirmwares.h"
+
+/**
  * Telemetry support
  */
 #import "ESTTelemetryNotificationProtocol.h"
@@ -398,7 +403,7 @@
 #import "ESTTelemetryNotificationGPIO.h"
 #import "ESTTelemetryNotificationPressure.h"
 
-/** 
+/**
  * Monitoring
  */
 #import "ESTMonitoringManager.h"

@@ -120,9 +120,7 @@ monitoringDidFailForRegion:(CLBeaconRegion * _Nullable)region
  * @param region The region for which the error occurred.
  * @param error An error object describing why ranging failed.
  */
-- (void)beaconManager:(id)manager
-rangingBeaconsDidFailForRegion:(CLBeaconRegion * _Nullable)region
-            withError:(NSError *)error;
+- (void)beaconManager:(id)manager rangingBeaconsDidFailForRegion:(CLBeaconRegion * _Nullable)region withError:(NSError *)error;
 
 #pragma mark Advertising Events
 ///--------------------------------------------------------------------

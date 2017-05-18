@@ -127,7 +127,7 @@ open class FoldingCell: UITableViewCell {
           }
          
             
-          if(!tap.cerveja_img_url.isEmpty){
+          if(!tap.cervejaria_img_url.isEmpty){
             let urlCj = URL(string: tap.cervejaria_img_url)
             cervejaria_img.kf.setImage(with: urlCj, options: [.transition(.fade(0.2))])
             cervejaria_img.kf.indicatorType = .activity

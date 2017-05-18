@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ESTSettingReadWrite.h"
-#import "ESTGenericAdvertiser.h"
+#import "ESTGenericAdvertiserID.h"
 
 #define ESTSettingGenericAdvertiserDataErrorDomain @"ESTSettingGenericAdvertiserDataErrorDomain"
 
@@ -23,7 +23,11 @@ typedef NS_ENUM(NSUInteger, ESTSettingGenericAdvertiserDataError)
      /**
      *  Provided value is incorrect.
      */
-    ESTSettingGenericAdvertiserDataErrorCanNotBeNil = 1
+    ESTSettingGenericAdvertiserDataErrorCanNotBeNil = 1,
+    /**
+     *  Provided Advertiser ID is invalid.
+     */
+    ESTSettingGenericAdvertiserDataErrorInvalidAdvertiserID
 };
 
 @class ESTSettingGenericAdvertiserData;
@@ -56,7 +60,7 @@ typedef void(^ESTSettingGenericAdvertiserDataCompletionBlock)(ESTSettingGenericA
 - (instancetype)initWithValue:(NSData *)genericAdvertiserData;
 
 /**
- *  Designated initializer. Validates provided value internally with +validationErrorForValue:.
+ *  Designated initializer. Validates provided value internally with +validationErrorForValue:advertiserID:.
  *
  *  @see +[ESTSettingGenericAdvertiserData validationErrorForValue:]
  *
@@ -97,11 +101,12 @@ typedef void(^ESTSettingGenericAdvertiserDataCompletionBlock)(ESTSettingGenericA
 /**
  *  Method checks if provided value is allowed. Returns nil if validation passes.
  *
- *  @param genericAdvertiserData GenericAdvertiserData value.
+ *  @param data         GenericAdvertiser Data value.
+ *  @param advertiserID GenericAdvertiser ID.
  *
  *  @return Error object describing why validation failed. Nil if validation passes.
  */
-+ (NSError * _Nullable)validationErrorForValue:(NSData *)genericAdvertiserData;
++ (NSError * _Nullable)validationErrorForValue:(NSData *)data advertiserID:(ESTGenericAdvertiserID)advertiserID;
 
 @end
 

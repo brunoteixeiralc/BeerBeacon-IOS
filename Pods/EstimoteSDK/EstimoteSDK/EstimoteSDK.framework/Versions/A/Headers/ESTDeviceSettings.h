@@ -19,7 +19,9 @@ ESTDeviceSettingsAdvertiserEddystoneURL,
 ESTDeviceSettingsAdvertiserEddystoneTLM,
 ESTDeviceSettingsAdvertiserEstimoteLocation,
 ESTDeviceSettingsAdvertiserEstimoteTLM,
-ESTDeviceSettingsAdvertiserEddystoneEID;
+ESTDeviceSettingsAdvertiserEddystoneEID,
+ESTDeviceSettingsAdvertiserMesh,
+ESTDeviceSettingsAdvertiserUWB;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -73,6 +75,16 @@ NS_ASSUME_NONNULL_BEGIN
  *  Advertiser settings for Estimote TLM packets.
  */
 @property (nonatomic, strong, readonly) NSArray<ESTDeviceSettingsAdvertiserEstimoteTLM *> *estimoteTLM;
+
+/**
+ *  Advertiser settings for UWB packets.
+ */
+@property (nonatomic, strong, readonly) NSArray<ESTDeviceSettingsAdvertiserUWB *> *uwb;
+
+/**
+ *  Advertiser settings for Mesh packets.
+ */
+@property (nonatomic, strong, readonly) NSArray<ESTDeviceSettingsAdvertiserMesh *> *mesh;
 
 /**
  *  Designated initializer.

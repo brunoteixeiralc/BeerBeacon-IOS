@@ -11,9 +11,20 @@
 
 #import <Foundation/Foundation.h>
 #import "ESTSettingReadWrite.h"
-#import "ESTGenericAdvertiser.h"
+#import "ESTGenericAdvertiserID.h"
 
 #define ESTSettingGenericAdvertiserEnableErrorDomain @"ESTSettingGenericAdvertiserEnableErrorDomain"
+
+/**
+ *  Describes GenericAdvertiser GenericAdvertiserPower validation error.
+ */
+typedef NS_ENUM(NSUInteger, ESTSettingGenericAdvertiserEnableError)
+{
+    /**
+     *  Provided Advertiser ID is invalid.
+     */
+    ESTSettingGenericAdvertiserEnableErrorInvalidAdvertiserID = 1
+};
 
 
 @class ESTSettingGenericAdvertiserEnable;
@@ -46,7 +57,7 @@ typedef void(^ESTSettingGenericAdvertiserEnableCompletionBlock)(ESTSettingGeneri
 - (instancetype)initWithValue:(BOOL)genericAdvertiserEnabled;
 
 /**
- *  Designated initializer. Validates provided value internally with +validationErrorForValue:.
+ *  Designated initializer. Validates provided value internally with +validationErrorForValue:genericAdvertiserID:.
  *
  *  @see +[ESTSettingGenericAdvertiserEnable validationErrorForValue:]
  *
@@ -85,6 +96,16 @@ typedef void(^ESTSettingGenericAdvertiserEnableCompletionBlock)(ESTSettingGeneri
  *  @param completion Block to be invoked when operation is complete.
  */
 - (void)writeValue:(BOOL)genericAdvertiserEnabled completion:(ESTSettingGenericAdvertiserEnableCompletionBlock)completion;
+
+/**
+ *  Method checks if provided value is allowed. Returns nil if validation passes.
+ *
+ *  @param enabled      GenericAdvertiser Enabled value.
+ *  @param advertiserID GenericAdvertiser ID.
+ *
+ *  @return Error object describing why validation failed. Nil if validation passes.
+ */
++ (NSError * _Nullable)validationErrorForValue:(BOOL)enabled advertiserID:(ESTGenericAdvertiserID)advertiserID;
 
 @end
 

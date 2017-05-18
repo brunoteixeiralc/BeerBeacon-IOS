@@ -25,7 +25,6 @@ class DemoCell: FoldingCell {
   @IBOutlet weak var option1: UISwitch!
   @IBOutlet weak var option2: UISwitch!
     
-    
   var number: Int = 0 {
     didSet {
       closeNumberLabel.text = String((number + 1).format(f: "02"))
@@ -61,6 +60,47 @@ class DemoCell: FoldingCell {
     }
   }
     
+  let completionHandler:(QRCodeViewController)->Void = { QRCodeVc in
+    
+    let alertController = YBAlertController(title: "Quantidade", message: "Quantas \(QRCodeVc.tap.cerveja) de \((QRCodeVc.option.isOn) ? QRCodeVc.tap.medidas[0].quantidade : QRCodeVc.tap.medidas[1].quantidade) deseja?", style: .actionSheet)
+            alertController.touchingOutsideDismiss = true
+            alertController.buttonIconColor = UIColor(red: 255/255, green: 212/255, blue: 0/255, alpha: 1.0)
+            alertController.cancelButtonTitle = "Cancelar"
+            for i in 1 ..< 6 {
+                if(i == 1){
+                    alertController.addButton(UIImage(named: "cup"), title: "\(String(describing: String(i.format(f: "02"))))", action: {
+    
+                        SCLAlertView().showTitle(
+                            "Cheers!",
+                            subTitle: "\(i) cerveja \nSeu pedido já foi enviado.\nDaqui a pouco sua cerveja irá chegar.",
+                            duration: 0.0,
+                            completeText: "Ok",
+                            style: .success,
+                            colorStyle: 0xFFD400,
+                            colorTextButton: 0xFFFFFF
+                        )
+    
+                    })
+                }else{
+                    alertController.addButton(UIImage(named: "cup"), title: "\(String(describing: String(i.format(f: "02"))))", action: {
+    
+                        SCLAlertView().showTitle(
+                            "Cheers!",
+                            subTitle: "\(i) cervejas \nSeu pedido já foi enviado.\nDaqui a pouco sua cerveja irá chegar.",
+                            duration: 0.0,
+                            completeText: "Ok",
+                            style: .success,
+                            colorStyle: 0xFFD400,
+                            colorTextButton: 0xFFFFFF
+                        )
+                        
+                    })
+                }
+            }
+            
+            alertController.show()
+  }
+    
 }
 
 extension DemoCell {
@@ -68,44 +108,14 @@ extension DemoCell {
   @IBAction func buttonHandler(_ sender: AnyObject) {
     
     if(option1.isOn || option2.isOn){
-        
-        let alertController = YBAlertController(title: "Quantidade", message: "Quantas \(tap.cerveja) de \(option1.isOn ? tap.medidas[0].quantidade : tap.medidas[1].quantidade) deseja?", style: .actionSheet)
-        alertController.touchingOutsideDismiss = true
-        alertController.buttonIconColor = UIColor(red: 255/255, green: 212/255, blue: 0/255, alpha: 1.0)
-        alertController.cancelButtonTitle = "Cancelar"
-        for i in 1 ..< 6 {
-            if(i == 1){
-                alertController.addButton(UIImage(named: "cup"), title: "\(String(describing: String(i.format(f: "02"))))", action: {
-                    
-                    SCLAlertView().showTitle(
-                        "Cheers!",
-                        subTitle: "\(i) cerveja \nSeu pedido já foi enviado.\nDaqui a pouco seu cartão virtual irá ser chamado.",
-                        duration: 0.0,
-                        completeText: "Ok",
-                        style: .success,
-                        colorStyle: 0xFFD400,
-                        colorTextButton: 0xFFFFFF
-                    )
-                    
-                })
-            }else{
-                alertController.addButton(UIImage(named: "cup"), title: "\(String(describing: String(i.format(f: "02"))))", action: {
-                    
-                    SCLAlertView().showTitle(
-                        "Cheers!",
-                        subTitle: "\(i) cervejas \nSeu pedido já foi enviado.\nDaqui a pouco seu cartão virtual irá ser chamado.",
-                        duration: 0.0,
-                        completeText: "Ok",
-                        style: .success,
-                        colorStyle: 0xFFD400,
-                        colorTextButton: 0xFFFFFF
-                    )
-                    
-                })
-            }
-        }
-        
-        alertController.show()
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let nv = storyboard.instantiateViewController(withIdentifier: "QRCodeNv") as! UINavigationController
+        let vc = nv.topViewController as! QRCodeViewController
+        vc.completionHandler = completionHandler
+        vc.tap = tap
+        vc.option = option1
+        self.window?.rootViewController?.present(nv, animated: true, completion: nil)
         
     }else{
         
