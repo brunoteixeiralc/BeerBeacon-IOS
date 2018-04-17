@@ -24,8 +24,6 @@
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Nós usamos low-energy Bluetooth e iBeacon instalados na loja para te mostrar as torneiras disponíveis e outras mensagens (promoções e descontos).Cheers!</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>

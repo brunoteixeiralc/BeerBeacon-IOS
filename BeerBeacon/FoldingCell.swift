@@ -435,7 +435,7 @@ open class FoldingCell: UITableViewCell {
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
       self.animationView?.alpha = 0
       self.containerView.alpha  = 1
-      completion?()
+        completion?(nil)
     })
   }
   
@@ -476,7 +476,7 @@ open class FoldingCell: UITableViewCell {
     }
     DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: {
       self.animationView?.alpha = 0
-      completion?()
+        completion?(Void)
     })
     
     let firstItemView = animationView?.subviews.filter{$0.tag == 0}.first

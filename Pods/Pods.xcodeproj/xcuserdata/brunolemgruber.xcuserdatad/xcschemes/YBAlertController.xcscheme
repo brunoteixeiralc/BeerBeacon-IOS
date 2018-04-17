@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9ACB30C96148081BA7CA4C99F142C5CA'
-               BlueprintName = 'YBAlertController'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'YBAlertController.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "141982DE1170288ED01C21C74653463F"
+               BlueprintName = "YBAlertController"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "YBAlertController.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

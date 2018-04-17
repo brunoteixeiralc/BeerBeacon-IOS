@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8227B852BFE644DF298A6A8E /* Pods_BeerBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0399521B5B9296EDDA04D9 /* Pods_BeerBeacon.framework */; };
-		E1308F894AEE3E1774401379 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73400F941BCAC685B8EA9692 /* libPods-OneSignalNotificationServiceExtension.a */; };
 		F48F8FC71E9BF059007A5066 /* Medida.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48F8FC61E9BF059007A5066 /* Medida.swift */; };
 		F4A2A8781ECD17CD00FFA3CC /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2A8771ECD17CD00FFA3CC /* QRCodeViewController.swift */; };
 		F4A8EB3C1E54990200580285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB3B1E54990200580285 /* AppDelegate.swift */; };
@@ -22,8 +21,6 @@
 		F4A8EB901E54A02900580285 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8EB8F1E54A02900580285 /* FoldingCell.swift */; };
 		F4BA7BB31E97526200CA1C50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4BA7BB21E97526200CA1C50 /* GoogleService-Info.plist */; };
 		F4BA7BB61E97531000CA1C50 /* Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA7BB51E97531000CA1C50 /* Tap.swift */; };
-		F4C275541EC2C85C00A032D7 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C275531EC2C85C00A032D7 /* NotificationService.swift */; };
-		F4C275581EC2C85C00A032D7 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F4C275511EC2C85C00A032D7 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +38,6 @@
 			remoteGlobalIDString = F4A8EB371E54990200580285;
 			remoteInfo = BeerBeacon;
 		};
-		F4C275561EC2C85C00A032D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F4A8EB301E54990200580285 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F4C275501EC2C85C00A032D7;
-			remoteInfo = OneSignalNotificationServiceExtension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,7 +47,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				F4C275581EC2C85C00A032D7 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,13 +56,10 @@
 /* Begin PBXFileReference section */
 		73400F941BCAC685B8EA9692 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7918E0FE4F9FFBA112EABC38 /* Pods-BeerBeacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerBeacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeerBeacon/Pods-BeerBeacon.release.xcconfig"; sourceTree = "<group>"; };
-		828D0CC4420298DFB67174D2 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		8756D6F9B4E5C56B22E44F3B /* Pods-BeerBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerBeacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerBeacon/Pods-BeerBeacon.debug.xcconfig"; sourceTree = "<group>"; };
 		9BA6622355DF144E2505186F /* Pods_BeerBeaconUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerBeaconUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E1132BD54717D9304C1BD1 /* Pods_BeerBeaconTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerBeaconTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0399521B5B9296EDDA04D9 /* Pods_BeerBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDCCBA6C67AC2C713BBE4DE2 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
-		F45677721E573D15002709EF /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		F48F8FC61E9BF059007A5066 /* Medida.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medida.swift; sourceTree = "<group>"; };
 		F4A2A8771ECD17CD00FFA3CC /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		F4A8EB381E54990200580285 /* BeerBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,9 +90,6 @@
 		F4BA7BB21E97526200CA1C50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4BA7BB51E97531000CA1C50 /* Tap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tap.swift; sourceTree = "<group>"; };
 		F4BA7BB71E9758E700CA1C50 /* BeerBeacon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeerBeacon.entitlements; sourceTree = "<group>"; };
-		F4C275511EC2C85C00A032D7 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4C275531EC2C85C00A032D7 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
-		F4C275551EC2C85C00A032D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,14 +115,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4C2754E1EC2C85C00A032D7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1308F894AEE3E1774401379 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -148,8 +123,6 @@
 			children = (
 				8756D6F9B4E5C56B22E44F3B /* Pods-BeerBeacon.debug.xcconfig */,
 				7918E0FE4F9FFBA112EABC38 /* Pods-BeerBeacon.release.xcconfig */,
-				828D0CC4420298DFB67174D2 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
-				CDCCBA6C67AC2C713BBE4DE2 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -160,7 +133,6 @@
 				F4A8EB3A1E54990200580285 /* BeerBeacon */,
 				F4A8EB4F1E54990200580285 /* BeerBeaconTests */,
 				F4A8EB5A1E54990200580285 /* BeerBeaconUITests */,
-				F4C275521EC2C85C00A032D7 /* OneSignalNotificationServiceExtension */,
 				F4A8EB391E54990200580285 /* Products */,
 				E32AB52D4951669E14CB7911 /* Pods */,
 				FEB30DAFA4734565A2BD85BA /* Frameworks */,
@@ -173,7 +145,6 @@
 				F4A8EB381E54990200580285 /* BeerBeacon.app */,
 				F4A8EB4C1E54990200580285 /* BeerBeaconTests.xctest */,
 				F4A8EB571E54990200580285 /* BeerBeaconUITests.xctest */,
-				F4C275511EC2C85C00A032D7 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,7 +165,6 @@
 				F4A8EB441E54990200580285 /* LaunchScreen.storyboard */,
 				F4A8EB471E54990200580285 /* Info.plist */,
 				F4BA7BB21E97526200CA1C50 /* GoogleService-Info.plist */,
-				F45677721E573D15002709EF /* ObjCBridge.h */,
 			);
 			path = BeerBeacon;
 			sourceTree = "<group>";
@@ -243,15 +213,6 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		F4C275521EC2C85C00A032D7 /* OneSignalNotificationServiceExtension */ = {
-			isa = PBXGroup;
-			children = (
-				F4C275531EC2C85C00A032D7 /* NotificationService.swift */,
-				F4C275551EC2C85C00A032D7 /* Info.plist */,
-			);
-			path = OneSignalNotificationServiceExtension;
-			sourceTree = "<group>";
-		};
 		FEB30DAFA4734565A2BD85BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,7 +242,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				F4C275571EC2C85C00A032D7 /* PBXTargetDependency */,
 			);
 			name = BeerBeacon;
 			productName = BeerBeacon;
@@ -324,26 +284,6 @@
 			productReference = F4A8EB571E54990200580285 /* BeerBeaconUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		F4C275501EC2C85C00A032D7 /* OneSignalNotificationServiceExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F4C2755B1EC2C85C00A032D7 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
-			buildPhases = (
-				8C222F3B3DF28D7AB2E0F2BA /* [CP] Check Pods Manifest.lock */,
-				F4C2754D1EC2C85C00A032D7 /* Sources */,
-				F4C2754E1EC2C85C00A032D7 /* Frameworks */,
-				F4C2754F1EC2C85C00A032D7 /* Resources */,
-				DCD080661268B5D8628CEE84 /* [CP] Embed Pods Frameworks */,
-				A9625C3626FE0253F2E3B850 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OneSignalNotificationServiceExtension;
-			productName = OneSignalNotificationServiceExtension;
-			productReference = F4C275511EC2C85C00A032D7 /* OneSignalNotificationServiceExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -351,13 +291,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Bruno Lemgruber";
 				TargetAttributes = {
 					F4A8EB371E54990200580285 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = RREN52MQC8;
-						LastSwiftMigration = 0830;
+						DevelopmentTeam = 8UW672R5KC;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -374,22 +314,16 @@
 					F4A8EB4B1E54990200580285 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RREN52MQC8;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F4A8EB371E54990200580285;
 					};
 					F4A8EB561E54990200580285 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RREN52MQC8;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F4A8EB371E54990200580285;
-					};
-					F4C275501EC2C85C00A032D7 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = RREN52MQC8;
-						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -409,7 +343,6 @@
 				F4A8EB371E54990200580285 /* BeerBeacon */,
 				F4A8EB4B1E54990200580285 /* BeerBeaconTests */,
 				F4A8EB561E54990200580285 /* BeerBeaconUITests */,
-				F4C275501EC2C85C00A032D7 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -440,13 +373,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4C2754F1EC2C85C00A032D7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -471,13 +397,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeerBeacon-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6DFC565EDBF3F8D2BD64A565 /* [CP] Embed Pods Frameworks */ = {
@@ -486,58 +415,30 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BeerBeacon/Pods-BeerBeacon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/KVNProgress/KVNProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/YBAlertController/YBAlertController.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVNProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBAlertController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerBeacon/Pods-BeerBeacon-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C222F3B3DF28D7AB2E0F2BA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A9625C3626FE0253F2E3B850 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DCD080661268B5D8628CEE84 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -573,14 +474,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4C2754D1EC2C85C00A032D7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F4C275541EC2C85C00A032D7 /* NotificationService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -593,11 +486,6 @@
 			isa = PBXTargetDependency;
 			target = F4A8EB371E54990200580285 /* BeerBeacon */;
 			targetProxy = F4A8EB581E54990200580285 /* PBXContainerItemProxy */;
-		};
-		F4C275571EC2C85C00A032D7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F4C275501EC2C85C00A032D7 /* OneSignalNotificationServiceExtension */;
-			targetProxy = F4C275561EC2C85C00A032D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -630,7 +518,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -638,7 +528,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -682,7 +576,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -690,7 +586,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -722,15 +622,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8756D6F9B4E5C56B22E44F3B /* Pods-BeerBeacon.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BeerBeacon/BeerBeacon.entitlements;
-				DEVELOPMENT_TEAM = RREN52MQC8;
+				DEVELOPMENT_TEAM = 8UW672R5KC;
 				INFOPLIST_FILE = BeerBeacon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.BeerBeacon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -738,15 +639,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7918E0FE4F9FFBA112EABC38 /* Pods-BeerBeacon.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BeerBeacon/BeerBeacon.entitlements;
-				DEVELOPMENT_TEAM = RREN52MQC8;
+				DEVELOPMENT_TEAM = 8UW672R5KC;
 				INFOPLIST_FILE = BeerBeacon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.BeerBeacon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -760,7 +662,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.BeerBeaconTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeerBeacon.app/BeerBeacon";
 			};
 			name = Debug;
@@ -775,7 +678,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.BeerBeaconTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeerBeacon.app/BeerBeacon";
 			};
 			name = Release;
@@ -789,7 +693,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.BeerBeaconUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = BeerBeacon;
 			};
 			name = Debug;
@@ -803,42 +708,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.BeerBeaconUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = BeerBeacon;
-			};
-			name = Release;
-		};
-		F4C275591EC2C85C00A032D7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 828D0CC4420298DFB67174D2 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				DEVELOPMENT_TEAM = RREN52MQC8;
-				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.BeerBeacon.OneSignalNotificationServiceExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		F4C2755A1EC2C85C00A032D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDCCBA6C67AC2C713BBE4DE2 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				DEVELOPMENT_TEAM = RREN52MQC8;
-				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.BeerBeacon.OneSignalNotificationServiceExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -877,15 +749,6 @@
 			buildConfigurations = (
 				F4A8EB671E54990200580285 /* Debug */,
 				F4A8EB681E54990200580285 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F4C2755B1EC2C85C00A032D7 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F4C275591EC2C85C00A032D7 /* Debug */,
-				F4C2755A1EC2C85C00A032D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

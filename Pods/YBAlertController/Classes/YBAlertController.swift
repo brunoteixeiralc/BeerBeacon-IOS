@@ -97,7 +97,7 @@ open class YBAlertController: UIViewController, UIGestureRecognizerDelegate {
         NotificationCenter.default.removeObserver(self)
     }
     
-    func changedOrientation(_ notification: Notification) {
+    @objc func changedOrientation(_ notification: Notification) {
         if showing && style == YBAlertControllerStyle.actionSheet {
             let value = currentOrientation?.rawValue
             UIDevice.current.setValue(value, forKey: "orientation")
@@ -169,7 +169,7 @@ open class YBAlertController: UIViewController, UIGestureRecognizerDelegate {
         }
     }
     
-    open func dismiss() {
+    @objc open func dismiss() {
         showing = false
         if let statusBarStyle = currentStatusBarStyle {
             UIApplication.shared.statusBarStyle = statusBarStyle
@@ -400,7 +400,7 @@ open class YBAlertController: UIViewController, UIGestureRecognizerDelegate {
         addButton(nil, title: title, target: target, selector: selector)
     }
     
-    func buttonTapped(_ button:YBButton) {
+    @objc func buttonTapped(_ button:YBButton) {
         if button.actionType == YBButtonActionType.closure {
             button.action()
         } else if button.actionType == YBButtonActionType.selector {
